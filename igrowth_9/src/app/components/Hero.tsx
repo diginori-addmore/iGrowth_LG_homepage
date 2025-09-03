@@ -3,7 +3,7 @@ import HeroCards from "./HeroCards";
 export default function Hero() {
   return (
     <>
-      <section className="flex flex-col items-center justify-center text-center pt-60 pb-20 bg-gray-800">
+      <section className="flex flex-col items-center justify-center text-center pt-60 pb-20 bg-gradient-to-b from-gray-700 to-black">
         {/* TODO: Hero 이미지 배경 */}
         <h1 className="text-2xl md:text-3xl font-extrabold leading-tight text-pink-500">
           LG U+ Why Not SW Camp <br />
