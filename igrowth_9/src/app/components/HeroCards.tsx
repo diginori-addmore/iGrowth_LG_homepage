@@ -6,7 +6,7 @@ export default function HeroCards() {
     ];
 
     return (
-        <section className="mt-20 flex flex-col items-center gap-4 px-6">
+        <section className="mt-16 flex flex-col items-center gap-4 px-6">
             {/* 위쪽 3개 카드 */}
             <div className="flex justify-center gap-7">
                 {cards.map((card, idx) => (
@@ -24,8 +24,10 @@ export default function HeroCards() {
             </div>
 
             {/* 밑에 2개 길쭉한 카드 */}
-            <div className="relative border border-gray-200 bg-gradient-to-b from-gray-200 to-pink-300
-            rounded-lg shadow-md mt-5 p-4 w-full hover:shadow-2xl transition-shadow duration-300 h-35">
+            <div className="relative border border-gray-200 
+            bg-gray-200
+            rounded-lg shadow-md mt-5 p-4 w-full 
+            hover:shadow-2xl transition-shadow duration-300 h-35">
 
                 {/* 텍스트와 이미지 영역 */}
                 <div className="flex justify-between items-end h-full p-4">
@@ -46,30 +48,35 @@ export default function HeroCards() {
 
             </div>
 
-            <div className="border border-gray-200 bg-gradient-to-b from-pink-300 via-gray-100 to-white rounded-lg shadow-md p-6 hover:shadow-2xl transition-shadow duration-300 w-full">
+            <div className="border border-gray-200 
+            bg-gray-200
+            rounded-lg shadow-md p-6 
+            hover:shadow-2xl transition-shadow duration-300 w-full">
 
                 {/* 상단 문구 */}
-                <h3 className="text-2xl font-bold text-center mb-8 text-gray-900">
+                <h3 className="text-3xl font-bold text-center mb-8 
+                bg-gradient-to-r from-red-900 via-orange-400 to-red-900 
+                bg-clip-text text-transparent">
                     수강생들만을 위한 특별한 혜택
                 </h3>
 
                 {/* 6개 이미지 + 설명 */}
                 <div className="grid grid-cols-6 gap-6 px-8 mb-6">
                     {[
-                        { src: "/img1.png", label: "훈련장려금 월 최대\n816,000원 지급" },
-                        { src: "/img2.png", label: "현직자 특강 및\n멘토링" },
-                        { src: "/img3.png", label: "고성능 노트북\n무료 대여" },
-                        { src: "/img4.png", label: "1:1 맞춤 취업 컨설팅" },
-                        { src: "/img5.png", label: "자격증 취득 지원" },
-                        { src: "/img6.png", label: "오프라인 학습 및\n회의공간 제공" },
+                        { src: "/images/icons/1.png", label: "훈련장려금 월 최대\n816,000원 지급" },
+                        { src: "/images/icons/2.png", label: "현직자 특강 및\n멘토링" },
+                        { src: "/images/icons/3.png", label: "고성능 노트북\n무료 대여" },
+                        { src: "/images/icons/4.png", label: "1:1 맞춤 취업 컨설팅" },
+                        { src: "/images/icons/5.png", label: "자격증 취득 지원" },
+                        { src: "/images/icons/6.png", label: "오프라인 학습 및\n회의공간 제공" },
                     ].map((item, idx) => (
                         <div key={idx} className="flex flex-col items-center">
                             <img src={item.src} alt={item.label} className="w-16 h-16 object-contain" />
-                            <p className="mt-3 text-s font-bold text-gray-700 text-center whitespace-pre-line">{item.label}</p>
+                            <p className="mt-3 text-sm font-bold text-gray-700 text-center whitespace-pre-line">{item.label}</p>
                         </div>
                     ))}
                 </div>
-
+                    
             </div>
 
 

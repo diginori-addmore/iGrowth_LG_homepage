@@ -1,29 +1,76 @@
 export default function Features() {
+    const features = [
+        {
+            img: "/images/features/feature1.png",
+            title: "기초 실습 & 프로젝트",
+            description: (
+                <>
+                    <span className="text-pink-600 font-bold">초보자와 비전공자</span>도 체계적으로
+                    <br />
+                    실무 역량을 쌓을 수 있습니다.
+                </>
+            )
+        },
+        {
+            img: "/images/features/feature2.png",
+            title: "AI & 데이터 분석",
+            description: (
+                <>
+                    실무 데이터 분석과 <span className="text-pink-600 font-bold">AI 서비스 개발</span>
+                    <br />
+                    능력을 갖춘 인재로 성장합니다.
+                </>
+            )
+        },
+        {
+            img: "/images/features/feature3.png",
+            title: "현업 프로젝트 경험",
+            description: (
+                <>
+                    기업 환경을 반영한 <span className="text-pink-600 font-bold">3회의 프로젝트</span>로
+                    <br />
+                    실전 역량을 확보합니다.
+                </>
+            )
+        },
+        {
+            img: "/images/features/feature4.png",
+            title: "빠른 역량 향상",
+            description: (
+                <>
+                    <span className="text-pink-600 font-bold">바이브 코딩</span>을 통해 보다 빠르게
+                    <br />
+                    기술과 경험을 습득합니다.
+                </>
+            )
+        }
+    ];
+
     return (
-        <section id="features" className="py-20 px-6 bg-white">
-            <h2 className="text-3xl font-bold text-center mb-12">왜 WhyNotCamp인가? + 디자인, 내용개선 필요</h2>
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div className="p-6 border rounded-xl shadow-sm text-center">
-                    {/* TODO: 아이콘 */}
-                    <h3 className="text-xl font-semibold mb-2">실무 프로젝트</h3>
-                    <p className="text-gray-600">
-                        현업과 유사한 환경에서 팀 프로젝트를 진행하며 실전 감각을 기릅니다.
-                    </p>
-                </div>
-                <div className="p-6 border rounded-xl shadow-sm text-center">
-                    {/* TODO: 아이콘 */}
-                    <h3 className="text-xl font-semibold mb-2">전문 멘토링</h3>
-                    <p className="text-gray-600">
-                        업계 전문가의 1:1 코드 리뷰와 커리어 코칭을 제공합니다.
-                    </p>
-                </div>
-                <div className="p-6 border rounded-xl shadow-sm text-center">
-                    {/* TODO: 아이콘 */}
-                    <h3 className="text-xl font-semibold mb-2">취업 지원</h3>
-                    <p className="text-gray-600">
-                        포트폴리오 완성과 모의 인터뷰, 기업 매칭까지 이어드립니다.
-                    </p>
-                </div>
+        <section id="features" className="py-20 px-6 bg-gradient-to-b from-pink-100 to-white">
+            <h2 className="text-2xl font-bold text-center mt-10 mb-3 text-pink-500">
+                왜 LG U+ Why Not SW Camp 인가요?
+            </h2>
+            <h2 className="text-5xl font-bold text-center mb-12">
+                누구든지 확실한 성장을 이뤄낼 수 있습니다
+            </h2>
+
+            <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                {features.map((feature, idx) => (
+                    <div key={idx} className="text-center">
+                        {/* 이미지 박스 */}
+                        <div className="w-full h-64 rounded-xl overflow-hidden shadow-sm mb-4">
+                            <img
+                                src={feature.img}
+                                alt={feature.title}
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+                        {/* 텍스트 영역 */}
+                        <h3 className="text-left text-xl font-bold mb-2">{feature.title}</h3>
+                        <p className="text-left text-gray-500 font-medium mb-10">{feature.description}</p>
+                    </div>
+                ))}
             </div>
         </section>
     );
