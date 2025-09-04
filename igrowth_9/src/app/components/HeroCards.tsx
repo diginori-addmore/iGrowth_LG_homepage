@@ -6,7 +6,7 @@ export default function HeroCards() {
     ];
 
     return (
-        <section className="mt-20 flex flex-col items-center gap-4 px-6">
+        <section className="mt-16 flex flex-col items-center gap-4 px-6">
             {/* 위쪽 3개 카드 */}
             <div className="flex justify-center gap-7">
                 {cards.map((card, idx) => (
