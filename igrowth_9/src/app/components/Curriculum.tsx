@@ -76,7 +76,6 @@ export default function FullCurriculum() {
         },
     ];
 
-    // === Extra Section 데이터 ===
     const categories = ["기초 학습", "Python 데이터 분석", "빅데이터", "AI & 고급 데이터", "프로젝트"];
     const buttonsByCategory = [
         [
@@ -89,7 +88,6 @@ export default function FullCurriculum() {
             { title: "Python 기반 확률 및 통계", detail: ["확률과 확률변수", "조건부 확률과 독립", "통계적 추론", "선형대수, 벡터와 행렬", "상관분석, 회귀분석", "AI 통계"] },
             { title: "데이터 수집", detail: ["웹 구조 이해 및 웹 데이터 크롤링", "대량 CSV, JSON 파일 로딩 및 파싱", "API 활용 CSV, JSON 데이터 수집", "DB to DB 수집"] },
             { title: "데이터 처리 및 분석", detail: ["Pandas, Numpy, 데이터 정제 및 전처리", "선형대수, 상관분석, 회귀분석, 신경망 기초", "AI 기반 코드 생성 및 데이터 분석 자동화 실습", "비즈니스 문제 해결을 위한 AI 툴 활용법", "바이브코딩을 활용한 웹 개발 연동"] },
-
         ],
         [
             { title: "빅데이터 처리 / 저장 / 관리 기술", detail: ["AirFlow를 활용한 워크플로우 관리", "ElasticSearch & Logstash & Kibana", "Hadoop & Hive", "AWS 데이터 파이프라인"] },
@@ -99,7 +97,8 @@ export default function FullCurriculum() {
         [
             { title: "머신러닝 / 딥러닝", detail: ["주요 머신러닝 모델, 주요 분류 평가지표", "데이터 인코딩, 하이퍼 파라미터 최적화", "인공신경망, 합성곱 신경망(CNN)", "일고리즘 성능 향상", "이미지 / 영상 딥러닝 실습", "AI 챗봇(LLM)을 활용한 코딩 및 디버깅 실습", "AI 기반 코드 추천 및 자동 완성 기능 활용"] },
             { title: "바이브코딩 및 생성형 AI 모델 활용", detail: ["사례 기반 ML / DL", "AI 기반 서비스 개발을 위한 파이썬 라이브러리", "AI Agent : LLM, LangChain, RAG, MCP, ADK, A2A, LangGraph"] },
-            { title: "ML / DL 기반 서비스 개발", detail: ["MLOps", "ML / DL 모델 개념 및 활용 사례", "FastAPI 활용 서비스 개발", "클라우드 배포"] },],
+            { title: "ML / DL 기반 서비스 개발", detail: ["MLOps", "ML / DL 모델 개념 및 활용 사례", "FastAPI 활용 서비스 개발", "클라우드 배포"] },
+        ],
         [
             { title: "AI 활용 서비스 기획 / 설계", detail: ["문제 정의 및 상세 주제 설정", "생성형 AI 활용한 자료조사 및 벤치마킹", "아이디어 도출 및 서비스 시나리오 작성", "요구사항 도출 및 수행 단계 수립", "WBS 작성 및 Prototype 개발"] },
             { title: "미니 프로젝트 : 분석 및 예측", detail: ["프로젝트 정의 및 요구사항 정의", "데이터 정의 및 수집", "데이터 전처리 (중복 데이터, 이상치 제거 등)", "데이터 분석 및 모델 개발", "결과 도출 및 모델 평가"] },
@@ -107,15 +106,14 @@ export default function FullCurriculum() {
         ]
     ];
 
-    // 카테고리별 버튼 상태 관리 (독립적)
     const [openButtons, setOpenButtons] = useState(
         buttonsByCategory.map(cat => cat.map(() => false))
     );
 
-    const toggleButton = (catIdx: number, btnIdx: number) => {
+    const toggleButton = (catIdx, btnIdx) => {
         setOpenButtons(prev => {
             const newState = prev.map(inner => [...inner]);
-            newState[catIdx][btnIdx] = !newState[catIdx][btnIdx]; // 클릭된 버튼만 토글
+            newState[catIdx][btnIdx] = !newState[catIdx][btnIdx];
             return newState;
         });
     };
@@ -123,20 +121,23 @@ export default function FullCurriculum() {
     return (
         <>
             {/* === 첫 번째 Curriculum Section === */}
-            <section className="bg-gradient-to-b from-pink-400 via-pink-500 to-gray-900 py-20 px-6">
+            {/* 모바일: py-16 px-4 / 데스크톱: py-20 px-6 */}
+            <section className="bg-gradient-to-b from-pink-400 via-pink-500 to-gray-900 py-16 px-4 md:py-20 md:px-6">
                 <div className="text-center mb-12">
-                    <h2 className="text-xl font-bold text-white mb-2">LG U+ Why Not SW Camp 만의</h2>
-                    <p className="text-5xl font-bold text-white">초고속 실력 향상 커리큘럼</p>
+                    <h2 className="text-lg md:text-xl font-bold text-white mb-2">LG U+ Why Not SW Camp 만의</h2>
+                    {/* 모바일: text-4xl / 데스크톱: text-5xl */}
+                    <p className="text-4xl md:text-5xl font-bold text-white">초고속 실력 향상 커리큘럼</p>
                 </div>
 
-                <div className="flex max-w-6xl mx-auto gap-8">
-                    {/* 좌측 버튼 */}
-                    <div className="flex flex-col gap-4 w-1/4">
+                {/* 모바일: flex-col / 데스크톱: flex-row */}
+                <div className="flex flex-col md:flex-row max-w-6xl mx-auto gap-8">
+                    {/* 좌측 버튼 - 모바일: w-full / 데스크톱: w-1/4 */}
+                    <div className="flex flex-col gap-4 w-full md:w-1/4">
                         {phases.map((phase, idx) => (
                             <button
                                 key={idx}
                                 onClick={() => setActivePhase(idx)}
-                                className={`transition-colors duration-200 text-white px-4 py-3 rounded-lg text-left ${activePhase === idx ? "bg-white text-black font-bold" : "bg-transparent"
+                                className={`transition-colors duration-200 text-white px-4 py-3 rounded-lg text-left ${activePhase === idx ? "bg-white text-black font-bold" : "bg-transparent border border-white/50" // 모바일에서 버튼 구분을 위해 border 추가
                                     }`}
                             >
                                 <div className={`text-lg font-semibold ${activePhase === idx ? "text-black" : "text-white"}`}>
@@ -154,12 +155,13 @@ export default function FullCurriculum() {
                             {phases[activePhase].content.sections.map((sec, idx) => {
                                 const Icon = sec.icon;
                                 return (
-                                    <div key={idx} className="pb-4 border-b border-white/30 last:border-0 grid grid-cols-3 gap-4 items-start">
+                                    // 모바일: grid-cols-1 / 데스크톱: grid-cols-3
+                                    <div key={idx} className="pb-4 border-b border-white/30 last:border-0 grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-2 items-start">
                                         <div className="flex items-start gap-2">
-                                            <Icon className="w-5 h-5 text-yellow-300 mt-1" />
+                                            <Icon className="w-5 h-5 text-yellow-300 mt-1 flex-shrink-0" />
                                             <h4 className="text-lg font-semibold">{sec.subheading}</h4>
                                         </div>
-                                        <div className="col-span-2">
+                                        <div className="md:col-span-2">
                                             <ul className="space-y-1 text-gray-300">
                                                 {sec.details.map((d, i) => (
                                                     <li key={i}>{d}</li>
@@ -175,10 +177,12 @@ export default function FullCurriculum() {
             </section>
 
             {/* === 두 번째 Extra Section === */}
-            <section className="py-20 px-6 text-white bg-gray-900 min-h-[700px]">
-                <h2 className="text-center text-4xl font-bold mb-8">상세 교육 과정</h2>
+            {/* 모바일: py-16 px-4 / 데스크톱: py-20 px-6 */}
+            <section className="py-16 px-4 md:py-20 md:px-6 text-white bg-gray-900 min-h-[700px]">
+                {/* 모바일: text-3xl / 데스크톱: text-4xl */}
+                <h2 className="text-center text-3xl md:text-4xl font-bold mb-8">상세 교육 과정</h2>
 
-                {/* 카테고리 탭 */}
+                {/* 카테고리 탭 (모바일 스크롤 가능) */}
                 <div className="overflow-x-auto flex gap-6 justify-center mb-4">
                     {categories.map((cat, idx) => (
                         <button
@@ -199,6 +203,7 @@ export default function FullCurriculum() {
                 {/* 버튼 목록 */}
                 <div className="flex flex-wrap justify-start gap-4 items-start max-w-5xl mx-auto">
                     {buttonsByCategory[activeCategory].map((btn, idx) => (
+                        // 모바일: w-full / 데스크톱: w-[300px]
                         <div
                             key={idx}
                             className={`w-full md:w-[300px] p-4 rounded-lg bg-white/10 cursor-pointer transition-all duration-300 min-h-[60px] ${openButtons[activeCategory][idx] ? "shadow-xl" : "hover:shadow-md"
@@ -214,7 +219,7 @@ export default function FullCurriculum() {
                             </div>
                             <div
                                 className={`overflow-hidden transition-all duration-500 ease-in-out ${openButtons[activeCategory][idx]
-                                    ? "max-h-60 mt-2 opacity-100" // 내용 길이에 맞춰 max-h 조정
+                                    ? "max-h-60 mt-2 opacity-100"
                                     : "max-h-0 mt-0 opacity-0"
                                     }`}
                             >
@@ -235,4 +240,3 @@ export default function FullCurriculum() {
         </>
     );
 }
-

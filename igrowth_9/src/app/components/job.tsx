@@ -24,27 +24,29 @@ const supportData = [
     },
 ];
 
-// 아이콘 컴포넌트는 더 이상 사용되지 않으므로 삭제합니다.
-
 export default function Job() {
     return (
-        <section className="bg-gray-900 text-white pb-40 px-6">
+        // 모바일 화면을 위해 섹션의 좌우(px) 및 하단(pb) 여백을 조정합니다.
+        <section className="bg-gray-900 text-white py-20 px-4 sm:px-6 pb-24 md:pb-40">
             <div className="container mx-auto max-w-6xl">
-                <div className="text-center mb-16">
-                    <h3 className="text-xl font-bold text-pink-500 mb-2">끝나도 끝난 게 아니다. 취업의 그 날까지</h3>
-                    <h2 className="text-4xl md:text-5xl font-bold text-white">성공적인 취업을 위한 A to Z</h2>
+                <div className="text-center mb-12 md:mb-16">
+                    {/* 모바일에서 소제목 폰트 크기를 살짝 줄입니다. */}
+                    <h3 className="text-lg sm:text-xl font-bold text-pink-500 mb-2">끝나도 끝난 게 아니다. 취업의 그 날까지</h3>
+                    {/* 모바일에서 메인 제목 폰트 크기를 반응형으로 조정합니다. */}
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">성공적인 취업을 위한 A to Z</h2>
                 </div>
 
-                <div className="flex flex-col md:flex-row justify-center gap-8">
+                <div className="flex flex-col md:flex-row justify-center items-stretch gap-8">
                     {supportData.map((item, index) => (
                         <div key={index} className="w-full md:w-2/5 flex flex-col rounded-xl overflow-hidden shadow-lg">
-                            {/* 상단: 제목 부분 (아이콘 제거 및 스타일 수정) */}
+                            {/* 상단: 제목 부분 */}
                             <div className="bg-pink-400 p-4">
-                                <h4 className="text-2xl font-bold text-center">{item.title}</h4>
+                                {/* 모바일에서 박스 제목 폰트 크기를 조정합니다. */}
+                                <h4 className="text-xl sm:text-2xl font-bold text-center">{item.title}</h4>
                             </div>
 
-                            {/* 하단: 내용 부분 (반투명) */}
-                            <div className="bg-white/5 p-8 h-full">
+                            {/* 하단: 내용 부분 */}
+                            <div className="bg-white/5 p-6 sm:p-8 h-full">
                                 <ul className="space-y-4">
                                     {item.details.map((detail, i) => (
                                         <li key={i} className="flex items-start text-gray-300">
@@ -61,4 +63,3 @@ export default function Job() {
         </section>
     );
 }
-
