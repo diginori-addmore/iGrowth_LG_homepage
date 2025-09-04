@@ -63,12 +63,12 @@ export default function HeroCards() {
                 {/* 6개 이미지 + 설명 */}
                 <div className="grid grid-cols-6 gap-6 px-8 mb-6">
                     {[
-                        { src: "/img1.png", label: "훈련장려금 월 최대\n816,000원 지급" },
-                        { src: "/img2.png", label: "현직자 특강 및\n멘토링" },
-                        { src: "/img3.png", label: "고성능 노트북\n무료 대여" },
-                        { src: "/img4.png", label: "1:1 맞춤 취업 컨설팅" },
-                        { src: "/img5.png", label: "자격증 취득 지원" },
-                        { src: "/img6.png", label: "오프라인 학습 및\n회의공간 제공" },
+                        { src: "/images/icon/1.png", label: "훈련장려금 월 최대\n816,000원 지급" },
+                        { src: "/images/icon/2.png", label: "현직자 특강 및\n멘토링" },
+                        { src: "/images/icon/3.png", label: "고성능 노트북\n무료 대여" },
+                        { src: "/images/icon/4.png", label: "1:1 맞춤 취업 컨설팅" },
+                        { src: "/images/icon/5.png", label: "자격증 취득 지원" },
+                        { src: "/images/icon/6.png", label: "오프라인 학습 및\n회의공간 제공" },
                     ].map((item, idx) => (
                         <div key={idx} className="flex flex-col items-center">
                             <img src={item.src} alt={item.label} className="w-16 h-16 object-contain" />
