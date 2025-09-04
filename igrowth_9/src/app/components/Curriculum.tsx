@@ -123,7 +123,7 @@ export default function FullCurriculum() {
     return (
         <>
             {/* === 첫 번째 Curriculum Section === */}
-            <section className="bg-gradient-to-b from-pink-200 via-pink-500 to-gray-900 py-20 px-6">
+            <section className="bg-gradient-to-b from-pink-400 via-pink-500 to-gray-900 py-20 px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-xl font-bold text-white mb-2">LG U+ Why Not SW Camp 만의</h2>
                     <p className="text-5xl font-bold text-white">초고속 실력 향상 커리큘럼</p>
