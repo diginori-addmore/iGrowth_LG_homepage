@@ -1,6 +1,6 @@
 export default function Labtop() {
     return (
-        <section className="relative flex items-center justify-center bg-gradient-to-b from-white to-pink-100 py-16 px-8 overflow-hidden gap-x-6">
+        <section className="relative flex items-center justify-center bg-gradient-to-b from-white to-pink-200 py-16 px-8 overflow-hidden gap-x-6">
 
             {/* 왼쪽 이미지 */}
             <div className="flex-1 flex justify-center items-end overflow-hidden">
