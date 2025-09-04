@@ -72,7 +72,7 @@ export default function HeroCards() {
                     ].map((item, idx) => (
                         <div key={idx} className="flex flex-col items-center">
                             <img src={item.src} alt={item.label} className="w-16 h-16 object-contain" />
-                            <p className="mt-3 text-s font-bold text-gray-700 text-center whitespace-pre-line">{item.label}</p>
+                            <p className="mt-3 text-sm font-bold text-gray-700 text-center whitespace-pre-line">{item.label}</p>
                         </div>
                     ))}
                 </div>
