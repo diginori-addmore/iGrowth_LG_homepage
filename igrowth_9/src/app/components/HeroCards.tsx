@@ -24,8 +24,10 @@ export default function HeroCards() {
             </div>
 
             {/* 밑에 2개 길쭉한 카드 */}
-            <div className="relative border border-gray-200 bg-gradient-to-b from-gray-200 to-pink-300
-            rounded-lg shadow-md mt-5 p-4 w-full hover:shadow-2xl transition-shadow duration-300 h-35">
+            <div className="relative border border-gray-200 
+            bg-gray-200
+            rounded-lg shadow-md mt-5 p-4 w-full 
+            hover:shadow-2xl transition-shadow duration-300 h-35">
 
                 {/* 텍스트와 이미지 영역 */}
                 <div className="flex justify-between items-end h-full p-4">
@@ -46,10 +48,15 @@ export default function HeroCards() {
 
             </div>
 
-            <div className="border border-gray-200 bg-gradient-to-b from-pink-300 via-gray-100 to-white rounded-lg shadow-md p-6 hover:shadow-2xl transition-shadow duration-300 w-full">
+            <div className="border border-gray-200 
+            bg-gray-200
+            rounded-lg shadow-md p-6 
+            hover:shadow-2xl transition-shadow duration-300 w-full">
 
                 {/* 상단 문구 */}
-                <h3 className="text-2xl font-bold text-center mb-8 text-gray-900">
+                <h3 className="text-3xl font-bold text-center mb-8 
+                bg-gradient-to-r from-red-900 via-orange-400 to-red-900 
+                bg-clip-text text-transparent">
                     수강생들만을 위한 특별한 혜택
                 </h3>
 

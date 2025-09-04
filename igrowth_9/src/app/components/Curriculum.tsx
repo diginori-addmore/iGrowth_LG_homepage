@@ -68,7 +68,7 @@ export default function Curriculum() {
     ];
 
     return (
-        <section className="bg-gradient-to-b from-orange-400 via-orange-800 to-gray-900 py-20 px-6">
+        <section className="bg-gradient-to-b from-pink-400 via-pink-500 to-gray-400 py-20 px-6">
             {/* 상단 홍보 문구 */}
             <div className="text-center mb-12">
                 <h2 className="text-xl font-bold text-white mb-2">LG U+ Why Not SW Camp 만의</h2>
