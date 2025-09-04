@@ -1,7 +1,7 @@
 export default function Features() {
     const features = [
         {
-            img: "/feature1.png",
+            img: "/images/feature1.png",
             title: "기초 실습 & 프로젝트",
             description: (
                 <>
@@ -12,7 +12,7 @@ export default function Features() {
             )
         },
         {
-            img: "/feature2.png",
+            img: "/images/feature2.png",
             title: "AI & 데이터 분석",
             description: (
                 <>
@@ -23,7 +23,7 @@ export default function Features() {
             )
         },
         {
-            img: "/feature3.png",
+            img: "/images/feature3.png",
             title: "현업 프로젝트 경험",
             description: (
                 <>
@@ -34,7 +34,7 @@ export default function Features() {
             )
         },
         {
-            img: "/feature4.png",
+            img: "/images/feature4.png",
             title: "빠른 역량 향상",
             description: (
                 <>
