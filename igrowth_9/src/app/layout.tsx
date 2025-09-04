@@ -2,7 +2,7 @@ import "./globals.css";
 import { ReactNode } from "react";
 
 export const metadata = {
-    title: "WhyNotCamp - iGrowth",
+    title: "LG U+ 연계 | Why Not SW Camp",
     description: "프론트엔드 부트캠프 랜딩페이지",
 };
 
