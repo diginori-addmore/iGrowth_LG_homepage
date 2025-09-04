@@ -7,6 +7,7 @@ import Teacher from "./components/Teacher";
 // import Testimonials from "./components/Testimonials";
 // import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
+import Job from "./components/job";
 
 export default function Page() {
     return (
@@ -16,6 +17,7 @@ export default function Page() {
             <Features />
             <Labtop />
             <Curriculum />
+            <Job />
             <Teacher />
             {/*
             <Testimonials />
