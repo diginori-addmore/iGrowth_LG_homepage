@@ -123,7 +123,7 @@ export default function FullCurriculum() {
     return (
         <>
             {/* === 첫 번째 Curriculum Section === */}
-            <section className="bg-gradient-to-b from-orange-400 via-orange-800 to-gray-900 py-20 px-6">
+            <section className="bg-gradient-to-b from-pink-200 via-pink-500 to-gray-900 py-20 px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-xl font-bold text-white mb-2">LG U+ Why Not SW Camp 만의</h2>
                     <p className="text-5xl font-bold text-white">초고속 실력 향상 커리큘럼</p>
@@ -197,11 +197,11 @@ export default function FullCurriculum() {
                 <div className="border-b border-gray-600 mb-8"></div>
 
                 {/* 버튼 목록 */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-start">
+                <div className="flex flex-wrap justify-start gap-4 items-start max-w-5xl mx-auto">
                     {buttonsByCategory[activeCategory].map((btn, idx) => (
                         <div
                             key={idx}
-                            className={`p-4 rounded-lg bg-white/10 cursor-pointer transition-all duration-300 min-h-[60px] ${openButtons[activeCategory][idx] ? "shadow-xl" : "hover:shadow-md"
+                            className={`w-full md:w-[300px] p-4 rounded-lg bg-white/10 cursor-pointer transition-all duration-300 min-h-[60px] ${openButtons[activeCategory][idx] ? "shadow-xl" : "hover:shadow-md"
                                 }`}
                             onClick={() => toggleButton(activeCategory, idx)}
                         >
@@ -214,12 +214,12 @@ export default function FullCurriculum() {
                             </div>
                             <div
                                 className={`overflow-hidden transition-all duration-500 ease-in-out ${openButtons[activeCategory][idx]
-                                    ? "max-h-40 mt-2 opacity-100"
+                                    ? "max-h-60 mt-2 opacity-100" // 내용 길이에 맞춰 max-h 조정
                                     : "max-h-0 mt-0 opacity-0"
                                     }`}
                             >
                                 {Array.isArray(btn.detail) ? (
-                                    <ul className="list-disc list-inside space-y-1 text-sm text-gray-300">
+                                    <ul className="list-disc list-outside pl-5 space-y-1 text-sm text-gray-300">
                                         {btn.detail.map((item, index) => (
                                             <li key={index}>{item}</li>
                                         ))}
@@ -235,3 +235,4 @@ export default function FullCurriculum() {
         </>
     );
 }
+
