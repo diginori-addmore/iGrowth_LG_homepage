@@ -19,7 +19,7 @@ export default function Labtop() {
                     교육용 <span className="text-pink-500">고성능 노트북 무료 </span>지원
                 </h2>
                 <p className="text-lg text-gray-600">
-                    i7(CPU세대도 기입 바람) / RAM 32GB / NVIDIA 4060
+                    i7-13620H / RAM 32GB / RTX 4060
                 </p>
             </div>
 
