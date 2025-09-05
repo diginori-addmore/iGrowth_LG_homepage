@@ -122,7 +122,7 @@ export default function FullCurriculum() {
         <>
             {/* === 첫 번째 Curriculum Section === */}
             {/* 모바일: py-16 px-4 / 데스크톱: py-20 px-6 */}
-            <section className="bg-gradient-to-b from-pink-400 via-pink-500 to-gray-900 py-16 px-4 md:py-20 md:px-6">
+            <section id="curriculum" className="bg-gradient-to-b from-pink-400 via-pink-500 to-gray-900 py-16 px-4 md:py-20 md:px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-lg md:text-xl font-bold text-white mb-2">LG U+ Why Not SW Camp 만의</h2>
                     {/* 모바일: text-4xl / 데스크톱: text-5xl */}

@@ -38,7 +38,7 @@ export default function FAQ() {
     };
 
     return (
-        <section id="faq-section" className="py-20 px-6 bg-gradient-to-b from-gray-900 to-black">
+        <section id="faq" className="py-20 px-6 bg-gradient-to-b from-gray-900 to-black">
             <div className="max-w-4xl mx-auto">
                 <div className="flex justify-between items-center border-b border-pink-400 pb-2 mb-8">
                     <h3 className="text-2xl md:text-3xl font-bold text-white"> 자주 묻는 질문</h3>
