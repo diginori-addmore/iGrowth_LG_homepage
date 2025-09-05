@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // 블로그 후기 카드 데이터
@@ -8,55 +8,55 @@ const reviewData = [
     {
         img: "/igrowth.webp",
         text: "기초는 쌓였고, 이제는\n'써먹는 법'을 익힐 차례",
-        link: "#"
+        link: "https://velog.io/@kangte/LG-U-Why-Not-SW-CAMP-6%EA%B8%B0-4%EC%9B%94-5%EC%A3%BC%EC%B0%A8-%ED%9A%8C%EA%B3%A0"
     },
     {
         img: "/igrowth.webp",
         text: "배우고 쓰고 도전하며,\n익숙해지고 단단해지는 중",
-        link: "#"
+        link: "https://velog.io/@muneuy311/LG-U-Why-Not-SW-CAMP-7%EA%B8%B0-11%EC%A3%BC%EC%B0%A8-%ED%9A%8C%EA%B3%A0"
     },
     {
         img: "/igrowth.webp",
         text: "처음 접한 클라우드,\n낯섦 속에서 흐름 잡기",
-        link: "#"
+        link: "https://velog.io/@pminsang/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%82%B4-%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B2%98%EB%A6%AC-%EB%B0%8F-%EC%84%9C%EB%B9%84%EC%8A%A4%EA%B0%9C%EB%B0%9C-%EA%B3%B5%EB%B6%80-7.147.18"
     },
     {
         img: "/igrowth.webp",
         text: "서툰 협업이었으나 함께 부딪히며\n진짜 팀워크를 배웠다.",
-        link: "#"
+        link: "https://velog.io/@baehj0907/LG-U-Why-Not-SW-Camp-7%EA%B8%B0-7%EC%9B%94-3%EC%A3%BC%EC%B0%A8-%ED%9A%8C%EA%B3%A0"
     },
     {
         img: "/igrowth.webp",
         text: "보이는 것에 그치지 않고,\n의미를 찾는 데이터 여정을 시작하다.",
-        link: "#"
+        link: "https://velog.io/@iriseverywhere/LG-U-Why-Not-SW-Camp-7%EA%B8%B0-%EC%A3%BC%EC%B0%A8-%ED%9A%8C%EA%B3%A0-qs40sayl"
     },
     {
         img: "/igrowth.webp",
         text: "머릿속 지식을 코드로,\n코드에서 프로젝트로 확장하는 중",
-        link: "#"
+        link: "https://velog.io/@whtjsdud54/LG-U-Why-Not-SW-Camppython-6%EC%9B%94-2%EC%A3%BC%EC%B0%A8-%ED%9A%8C%EA%B3%A0%EB%A1%9D"
     },
 ];
 
 // 프로젝트 결과물 카드 데이터 (상단 7개)
 const projectDataTop = [
-    { img: "https://placehold.co/600x400/3b82f6/ffffff?text=Project+1", link: "#" },
-    { img: "https://placehold.co/600x400/16a34a/ffffff?text=Project+2", link: "#" },
-    { img: "https://placehold.co/600x400/ef4444/ffffff?text=Project+3", link: "#" },
-    { img: "https://placehold.co/600x400/f97316/ffffff?text=Project+4", link: "#" },
-    { img: "https://placehold.co/600x400/8b5cf6/ffffff?text=Project+5", link: "#" },
-    { img: "https://placehold.co/600x400/0891b2/ffffff?text=Project+6", link: "#" },
-    { img: "https://placehold.co/600x400/db2777/ffffff?text=Project+7", link: "#" },
+    { img: "/proj_01.png", link: "https://github.com/whynotsw-camp/wh01-3rd-1team-CounselingHelp" },
+    { img: "/proj_02.png", link: "https://github.com/whynotsw-camp/wh01-3rd-2team-DOD" },
+    { img: "/proj_03.png", link: "https://github.com/whynotsw-camp/wh01-3rd-3team-UTIDAL" },
+    { img: "/proj_04.png", link: "https://github.com/whynotsw-camp/wh01-3rd-4team-DATARO" },
+    { img: "/proj_05.png", link: "https://github.com/whynotsw-camp/wh01-3rd-5team-GrandmaBae" },
+    { img: "/proj_06.png", link: "https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI" },
+    { img: "/proj_07.png", link: "https://github.com/whynotsw-camp/wh02-3rd-2team-YNW" },
 ];
 
 // 프로젝트 결과물 카드 데이터 (하단 7개)
 const projectDataBottom = [
-    { img: "https://placehold.co/600x400/475569/ffffff?text=Project+8", link: "#" },
-    { img: "https://placehold.co/600x400/ca8a04/ffffff?text=Project+9", link: "#" },
-    { img: "https://placehold.co/600x400/65a30d/ffffff?text=Project+10", link: "#" },
-    { img: "https://placehold.co/600x400/be123c/ffffff?text=Project+11", link: "#" },
-    { img: "https://placehold.co/600x400/0e7490/ffffff?text=Project+12", link: "#" },
-    { img: "https://placehold.co/600x400/581c87/ffffff?text=Project+13", link: "#" },
-    { img: "https://placehold.co/600x400/9f1239/ffffff?text=Project+14", link: "#" },
+    { img: "/proj_08.png", link: "https://github.com/whynotsw-camp/wh02-3rd-3team-SHC" },
+    { img: "/proj_09.png", link: "https://github.com/whynotsw-camp/wh02-3rd-4team-YCJ" },
+    { img: "/proj_10.png", link: "https://github.com/whynotsw-camp/wh03-3rd-Ateam-BorderCollies" },
+    { img: "/proj_11.png", link: "https://github.com/whynotsw-camp/wh03-3rd-Bteam-Short-U" },
+    { img: "/proj_12.png", link: "https://github.com/whynotsw-camp/wh05-3rd-Pteam" },
+    { img: "/proj_13.png", link: "https://github.com/whynotsw-camp/wh05-3rd-JungSung" },
+    { img: "/proj_14.png", link: "https://github.com/whynotsw-camp/wh05-3rd-CHteam-JOB" },
 ];
 
 
@@ -68,12 +68,12 @@ const extendedProjectsBottom = [...projectDataBottom, ...projectDataBottom];
 
 export default function Result() {
     // Refs for all three carousels
-    const reviewTrackRef = useRef(null);
-    const projectTopTrackRef = useRef(null);
-    const projectBottomTrackRef = useRef(null);
+    const reviewTrackRef = useRef<HTMLDivElement | null>(null);
+    const projectTopTrackRef = useRef<HTMLDivElement | null>(null);
+    const projectBottomTrackRef = useRef<HTMLDivElement | null>(null);
 
     // Refs for animation state
-    const animationFrameId = useRef(null);
+    const animationFrameId = useRef<number | null>(null);
     const reviewPosition = useRef(0);
     const projectTopPosition = useRef(0);
     const projectBottomPosition = useRef(0);
@@ -129,7 +129,7 @@ export default function Result() {
         };
     }, []);
 
-    const handlePress = (newDirection, newSpeed) => {
+    const handlePress = (newDirection: number, newSpeed: number) => {
         reviewDirection.current = newDirection;
         reviewSpeed.current = newSpeed;
     };
@@ -144,7 +144,7 @@ export default function Result() {
             {/* === 블로그 후기 섹션 === */}
             <div className="container mx-auto max-w-7xl">
                 <div className="text-center mb-16">
-                    <h3 className="text-xl font-bold text-pink-500 mb-2">'진짜' 후기에서 나타나는 강의 만족도</h3>
+                    <h3 className="text-xl font-bold text-pink-500 mb-2">&lsquo;진짜&rsquo; 후기에서 나타나는 강의 만족도</h3>
                     <h2 className="text-4xl md:text-5xl py-2 font-bold text-gray-900">수료생들의</h2>
                     <h2 className="text-4xl md:text-5xl py-2 font-bold text-gray-900">꾸밈없는 생생한 블로그 후기</h2>
                 </div>

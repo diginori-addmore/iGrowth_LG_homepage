@@ -4,9 +4,17 @@ import { ChevronUp } from "lucide-react";
 
 export default function ScrollToTop() {
     const [isVisible, setIsVisible] = useState(false);
+    const [isMounted, setIsMounted] = useState(false);
+
+    // 컴포넌트가 마운트되었는지 확인
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
 
     // 스크롤 위치에 따라 버튼 표시/숨김
     useEffect(() => {
+        if (!isMounted) return;
+
         const toggleVisibility = () => {
             if (window.pageYOffset > 300) {
                 setIsVisible(true);
@@ -17,7 +25,7 @@ export default function ScrollToTop() {
 
         window.addEventListener("scroll", toggleVisibility);
         return () => window.removeEventListener("scroll", toggleVisibility);
-    }, []);
+    }, [isMounted]);
 
     // 맨 위로 스크롤
     const scrollToTop = () => {
@@ -26,6 +34,11 @@ export default function ScrollToTop() {
             behavior: "smooth"
         });
     };
+
+    // 마운트되지 않았으면 아무것도 렌더링하지 않음
+    if (!isMounted) {
+        return null;
+    }
 
     return (
         <>

@@ -110,7 +110,7 @@ export default function FullCurriculum() {
         buttonsByCategory.map(cat => cat.map(() => false))
     );
 
-    const toggleButton = (catIdx, btnIdx) => {
+    const toggleButton = (catIdx: number, btnIdx: number) => {
         setOpenButtons(prev => {
             const newState = prev.map(inner => [...inner]);
             newState[catIdx][btnIdx] = !newState[catIdx][btnIdx];

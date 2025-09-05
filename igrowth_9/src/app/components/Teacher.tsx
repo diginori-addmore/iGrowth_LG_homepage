@@ -5,17 +5,18 @@ import React from 'react';
 // 실제 애플리케이션에서는 이 데이터를 API로부터 받아올 수 있습니다.
 const teacherData = {
     name: "민경국 강사님",
-    title: "22년 경력 전 네이버/라인플러스 핵심 빅데이터 프로젝트 전문가\n대규모 IT 서비스 데이터 시스템 설계 및 운영 노하우 보유",
-    bio: "효과적인 소개 멘트",
+    title: "22년 경력 실무에서 검증된 개발자",
+    bio: "네이버 출신 개발자로",
     career: [
-        "NAVER 전사 파이프라인 통합 구축",
-        "Clova BI 지표 ETL",
-        "B-TV 가족 분류 광고 타게팅",
-        "캐시슬라이드 광고 타게팅 AWS 구축",
-        "퍼블릭 클라우드(AWS, GCP) 및 프라이빗 클라우드(LINE VERDA, nCloud) 기반 빅데이터 플랫폼 구축 운영",
-        "지자체, 반도체, 국정원 ,교육, 게임, 광고, 메신저, 포털 등 다양한 도메인 경험",
-        "유지보수 엔지니어, 컨설팅, 사업관리, 창업, 스타트업, 애자일코치 등 다양한 역할 경험",
-        "데이터 파이프라인, BI분석, 이상 탐지 등 실제 프로젝트 기반의 실습 중심 강의 진행"
+        "현 디지노리 대표(수강자 실무 프로젝트 경력 증명서 발급)",
+        "국내 최대 데이터파이프라인 구축(네이버 쇼핑)",
+        "CLOVA AI 개발 참여 및 Naver LINE 어뷰징 분석 빅데이터 플랫폼 개발",
+        "캐시슬라이드 및 SKB 광고 타켓팅 개발",
+    ],
+    aim_title:["많은 부트캠프가 프로젝트 “흉내”만 내는 데 머무릅니다.","그러나 우리는 현업에서 바로 인정받을 수 있는 경험을 쌓게 합니다."],
+    aim: ["실무형 강의: 개발 환경 세팅, 직접 작성해보는 코드, 바이브코딩, 협업 방식, 문제 해결 중심의 강의",
+        "실제 프로젝트 진행: 제출용 모의 과제가 아니라, 실제 실무 프로젝트 기반 진행",
+        "경력 증명 지원: 취업 경쟁력 강화를 위해 수료 후, 3가지 경력 기반 증빙서류 제공 예정"
     ],
 };
 
@@ -48,11 +49,24 @@ export default function Teacher() {
                         <p className="text-gray-600 leading-relaxed mb-8">
                             {teacherData.bio}
                         </p>
-
-                        <div>
-                            <h4 className="text-xl font-semibold text-gray-900 mb-4 border-b-2 border-gray-200 pb-2">주요 경력</h4>
-                            <ul className="space-y-3 text-gray-600">
+                        <ul className="space-y-3 text-gray-600  mb-6">
                                 {teacherData.career.map((item, index) => (
+                                    <li key={index} className="flex items-start">
+                                        <svg className="w-5 h-5 text-pink-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        <div>
+                            <h4 className="text-xl font-semibold text-gray-900 mb-4 border-b-2 border-gray-200 pb-2">실무를 그대로 경험하는 교육</h4>
+
+                            <p className="text-gray-600 leading-relaxed mb-8">
+                            {teacherData.aim_title.map((line, idx) => (
+                                <span key={idx} className="block">{line}</span>
+                                ))}
+                        </p>
+                            <ul className="space-y-3 text-gray-600">
+                                {teacherData.aim.map((item, index) => (
                                     <li key={index} className="flex items-start">
                                         <svg className="w-5 h-5 text-pink-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                                         <span>{item}</span>
