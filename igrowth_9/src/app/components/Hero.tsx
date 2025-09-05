@@ -19,16 +19,19 @@ export default function Hero() {
 
         {/* 모바일에서 본문 폰트 크기와 상단 여백을 조정합니다. */}
         <p className="mt-4 md:mt-6 text-base sm:text-lg text-white max-w-2xl px-4">
-          Why Not SW Camp는 실무형 강의가 아닙니다.  <br />
-          실무 그 자체를 제공합니다&#33;  
-          실제 현업 프로젝트로 배우고, 팀 단위 협업과 배포까지 경험하며  
+          EX)바로 경력이 되는 LG U+ 만의 '진짜' 실무 강의를 만나보세요
+        </p>
+
+        <p className="mt-4 md:mt-6 text-base sm:text-lg text-white max-w-2xl px-4">
+          Why Not SW Camp는 실무형 강의가 아닌 실무 그 자체를 제공합니다.  <br />
+          실제 현업 프로젝트로 배우고, 팀 단위 협업과 배포까지 경험하며
           수료 후 곧바로 현업에 투입 가능한 개발자로 성장합니다. <br />
-          또한, 수료 후 실무 프로젝트 기반 경력 증명서를 수료증과 함께 발급해 드립니다.
+          또한, 수료 후 실무 프로젝트 기반 경력 증명서를 수료증과 함께 발급해 드립니다. 이거 너무 긴거 같아요
         </p>
 
         {/* 지원하기와 카카오톡 상담 버튼 */}
         {/* 모바일에서 버튼 상단 여백을 조정합니다. */}
-        <div className="mt-8 md:mt-12 flex flex-col sm:flex-row gap-4">
+        <div className="mt-8 md:mt-12 flex flex-row justify-center gap-4">
           <a
             href="https://igrowth.recruit.roundhr.com/c/RWTJ5MAHQN/apply"
             // 버튼에 호버 효과를 추가하여 사용자 경험을 개선합니다.

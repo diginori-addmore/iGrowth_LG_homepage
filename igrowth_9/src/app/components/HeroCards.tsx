@@ -12,10 +12,11 @@ export default function HeroCards() {
                 {cards.map((card, idx) => (
                     <div
                         key={idx}
-                        // 모바일: w-full / 데스크톱: w-80
-                        className="bg-gray-200 rounded-lg shadow-md p-5 flex flex-col items-center justify-center text-center w-full md:w-80 hover:shadow-2xl transition-shadow duration-300"
+                        // 모바일: p-4 / 데스크톱: p-5
+                        className="bg-gray-200 rounded-lg shadow-md p-4 md:p-5 flex flex-col items-center justify-center text-center w-full md:w-80 hover:shadow-2xl transition-shadow duration-300"
                     >
-                        <h3 className="text-2xl font-bold mb-3 bg-gradient-to-r from-orange-600 via-yellow-500 to-orange-700 bg-clip-text text-transparent">
+                        {/* 모바일: text-xl / 데스크톱: text-2xl */}
+                        <h3 className="text-xl md:text-2xl font-bold mb-3 bg-gradient-to-r from-orange-600 via-yellow-500 to-orange-700 bg-clip-text text-transparent">
                             {card.title}
                         </h3>
                         <p className="text-gray-700 font-bold text-lg md:text-xl">{card.line1}</p>

@@ -7,6 +7,7 @@ import Teacher from "./components/Teacher";
 import Result from "./components/Result";
 // import Testimonials from "./components/Testimonials";
 import Award from "./components/Award";
+import Classroom from "./components/Classroom";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import Job from "./components/Job";
@@ -25,6 +26,7 @@ export default function Page() {
             <Teacher />
             <Result />
             <Award />
+            <Classroom />
             <FAQ />
             {/*
             <Testimonials /> */}

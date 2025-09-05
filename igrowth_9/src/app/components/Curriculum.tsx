@@ -124,9 +124,9 @@ export default function FullCurriculum() {
             {/* 모바일: py-16 px-4 / 데스크톱: py-20 px-6 */}
             <section id="curriculum" className="bg-gradient-to-b from-pink-400 via-pink-500 to-gray-900 py-16 px-4 md:py-20 md:px-6">
                 <div className="text-center mb-12">
-                    <h2 className="text-lg md:text-xl font-bold text-white mb-2">LG U+ Why Not SW Camp 만의</h2>
+                    <h2 className="text-sm md:text-xl font-bold text-white mb-2">LG U+ Why Not SW Camp 만의</h2>
                     {/* 모바일: text-4xl / 데스크톱: text-5xl */}
-                    <p className="text-4xl md:text-5xl font-bold text-white">초고속 실력 향상 커리큘럼</p>
+                    <p className="text-3xl md:text-5xl font-bold text-white">초고속 실력 향상 커리큘럼</p>
                 </div>
 
                 {/* 모바일: flex-col / 데스크톱: flex-row */}
@@ -140,17 +140,17 @@ export default function FullCurriculum() {
                                 className={`transition-colors duration-200 text-white px-4 py-3 rounded-lg text-left ${activePhase === idx ? "bg-white text-black font-bold" : "bg-transparent border border-white/50" // 모바일에서 버튼 구분을 위해 border 추가
                                     }`}
                             >
-                                <div className={`text-lg font-semibold ${activePhase === idx ? "text-black" : "text-white"}`}>
+                                <div className={`text-sm md:text-lg font-semibold ${activePhase === idx ? "text-black" : "text-white"}`}>
                                     {phase.title}
                                 </div>
-                                <div className={`text-sm ${activePhase === idx ? "text-black" : "text-white"}`}>{phase.subtitle}</div>
+                                <div className={`text-xs md:text-sm ${activePhase === idx ? "text-black" : "text-white"}`}>{phase.subtitle}</div>
                             </button>
                         ))}
                     </div>
 
                     {/* 우측 컨텐츠 */}
                     <div className="flex-1 bg-white/10 rounded-xl p-6 min-h-[460px] text-white">
-                        <h3 className="text-2xl font-bold mb-6">{phases[activePhase].content.heading}</h3>
+                        <h3 className="text-xl md:text-2xl font-bold mb-6">{phases[activePhase].content.heading}</h3>
                         <div className="space-y-6">
                             {phases[activePhase].content.sections.map((sec, idx) => {
                                 const Icon = sec.icon;
@@ -159,10 +159,10 @@ export default function FullCurriculum() {
                                     <div key={idx} className="pb-4 border-b border-white/30 last:border-0 grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-2 items-start">
                                         <div className="flex items-start gap-2">
                                             <Icon className="w-5 h-5 text-yellow-300 mt-1 flex-shrink-0" />
-                                            <h4 className="text-lg font-semibold">{sec.subheading}</h4>
+                                            <h4 className="text-sm md:text-lg font-semibold">{sec.subheading}</h4>
                                         </div>
                                         <div className="md:col-span-2">
-                                            <ul className="space-y-1 text-gray-300">
+                                            <ul className="text-xs md:text-lg space-y-1 text-gray-200">
                                                 {sec.details.map((d, i) => (
                                                     <li key={i}>{d}</li>
                                                 ))}
@@ -183,7 +183,7 @@ export default function FullCurriculum() {
                 <h2 className="text-center text-3xl md:text-4xl font-bold mb-8">상세 교육 과정</h2>
 
                 {/* 카테고리 탭 (모바일 스크롤 가능) */}
-                <div className="overflow-x-auto flex gap-6 justify-center mb-4">
+                <div className="overflow-x-auto flex gap-6 justify-start md:justify-center mb-4">
                     {categories.map((cat, idx) => (
                         <button
                             key={idx}
