@@ -19,8 +19,11 @@ export default function Hero() {
 
         {/* 모바일에서 본문 폰트 크기와 상단 여백을 조정합니다. */}
         <p className="mt-4 md:mt-6 text-base sm:text-lg text-white max-w-2xl px-4">
-          Why Not? 지금이 AI Transformation의 시작 <br />
-          : 바이브 코딩으로 배우고, 생성형 AI로 더 빠르게 성장하자!
+          Why Not SW Camp는 실무형 강의가 아닙니다.  <br />
+          실무 그 자체를 제공합니다&#33;  
+          실제 현업 프로젝트로 배우고, 팀 단위 협업과 배포까지 경험하며  
+          수료 후 곧바로 현업에 투입 가능한 개발자로 성장합니다. <br />
+          또한, 수료 후 실무 프로젝트 기반 경력 증명서를 수료증과 함께 발급해 드립니다.
         </p>
 
         {/* 지원하기와 카카오톡 상담 버튼 */}
