@@ -10,6 +10,8 @@ import Award from "./components/Award";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import Job from "./components/Job";
+import Location from "./components/Location";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function Page() {
     return (
@@ -26,7 +28,9 @@ export default function Page() {
             <FAQ />
             {/*
             <Testimonials /> */}
+            <Location />
             <Footer />
+            <ScrollToTop />
         </>
     );
 }
