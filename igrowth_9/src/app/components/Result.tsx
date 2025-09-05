@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // 블로그 후기 카드 데이터
@@ -68,12 +68,12 @@ const extendedProjectsBottom = [...projectDataBottom, ...projectDataBottom];
 
 export default function Result() {
     // Refs for all three carousels
-    const reviewTrackRef = useRef(null);
-    const projectTopTrackRef = useRef(null);
-    const projectBottomTrackRef = useRef(null);
+    const reviewTrackRef = useRef<HTMLDivElement | null>(null);
+    const projectTopTrackRef = useRef<HTMLDivElement | null>(null);
+    const projectBottomTrackRef = useRef<HTMLDivElement | null>(null);
 
     // Refs for animation state
-    const animationFrameId = useRef(null);
+    const animationFrameId = useRef<number | null>(null);
     const reviewPosition = useRef(0);
     const projectTopPosition = useRef(0);
     const projectBottomPosition = useRef(0);
@@ -129,7 +129,7 @@ export default function Result() {
         };
     }, []);
 
-    const handlePress = (newDirection, newSpeed) => {
+    const handlePress = (newDirection: number, newSpeed: number) => {
         reviewDirection.current = newDirection;
         reviewSpeed.current = newSpeed;
     };
@@ -144,7 +144,7 @@ export default function Result() {
             {/* === 블로그 후기 섹션 === */}
             <div className="container mx-auto max-w-7xl">
                 <div className="text-center mb-16">
-                    <h3 className="text-xl font-bold text-pink-500 mb-2">'진짜' 후기에서 나타나는 강의 만족도</h3>
+                    <h3 className="text-xl font-bold text-pink-500 mb-2">&lsquo;진짜&rsquo; 후기에서 나타나는 강의 만족도</h3>
                     <h2 className="text-4xl md:text-5xl py-2 font-bold text-gray-900">수료생들의</h2>
                     <h2 className="text-4xl md:text-5xl py-2 font-bold text-gray-900">꾸밈없는 생생한 블로그 후기</h2>
                 </div>
