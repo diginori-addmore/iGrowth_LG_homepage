@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <>
       {/* 모바일 화면을 위해 섹션의 상단(pt) 및 하단(pb) 여백을 조정합니다. */}
-      <section className="flex flex-col items-center justify-center text-center pt-28 pb-16 md:pt-40 md:pb-20 bg-gradient-to-b from-gray-700 to-black">
+      <section id="apply" className="flex flex-col items-center justify-center text-center pt-28 pb-16 md:pt-40 md:pb-20 bg-gradient-to-b from-gray-700 to-black">
         {/* TODO: Hero 이미지 배경 */}
 
         {/* 모바일에서 제목 폰트 크기를 반응형으로 조정합니다. */}
