@@ -20,11 +20,8 @@ export default function Page() {
             <Curriculum />
             <Job />
             <Teacher />
-<<<<<<< HEAD
-            <FAQ />
-=======
             <Result />
->>>>>>> d3240f3cad36c7f5c6f63b300d04ea690c42da27
+            <FAQ />
             {/*
             <Testimonials /> */}
             <Footer />
