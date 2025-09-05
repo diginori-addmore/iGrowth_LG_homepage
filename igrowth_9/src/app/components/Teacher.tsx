@@ -21,8 +21,8 @@ const teacherData = {
 
 export default function Teacher() {
     return (
-        // 모바일: py-16 px-4 / 데스크톱: py-20 px-6
-        <section className="bg-white text-gray-800 py-16 px-4 md:py-20 md:px-6">
+        // 모바일: py-16 px-4 / 데스크톱: py-40 px-6
+        <section className="bg-white text-gray-800 py-16 px-4 md:py-40 md:px-6">
             <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12 md:mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-pink-500">강사진 소개</h2>
