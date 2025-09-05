@@ -39,24 +39,24 @@ const reviewData = [
 
 // 프로젝트 결과물 카드 데이터 (상단 7개)
 const projectDataTop = [
-    { img: "https://placehold.co/600x400/3b82f6/ffffff?text=Project+1", link: "#" },
-    { img: "https://placehold.co/600x400/16a34a/ffffff?text=Project+2", link: "#" },
-    { img: "https://placehold.co/600x400/ef4444/ffffff?text=Project+3", link: "#" },
-    { img: "https://placehold.co/600x400/f97316/ffffff?text=Project+4", link: "#" },
-    { img: "https://placehold.co/600x400/8b5cf6/ffffff?text=Project+5", link: "#" },
-    { img: "https://placehold.co/600x400/0891b2/ffffff?text=Project+6", link: "#" },
-    { img: "https://placehold.co/600x400/db2777/ffffff?text=Project+7", link: "#" },
+    { img: "/proj_01.png", link: "https://github.com/whynotsw-camp/wh01-3rd-1team-CounselingHelp" },
+    { img: "/proj_02.png", link: "https://github.com/whynotsw-camp/wh01-3rd-2team-DOD" },
+    { img: "/proj_03.png", link: "https://github.com/whynotsw-camp/wh01-3rd-3team-UTIDAL" },
+    { img: "/proj_04.png", link: "https://github.com/whynotsw-camp/wh01-3rd-4team-DATARO" },
+    { img: "/proj_05.png", link: "https://github.com/whynotsw-camp/wh01-3rd-5team-GrandmaBae" },
+    { img: "/proj_06.png", link: "https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI" },
+    { img: "/proj_07.png", link: "https://github.com/whynotsw-camp/wh02-3rd-2team-YNW" },
 ];
 
 // 프로젝트 결과물 카드 데이터 (하단 7개)
 const projectDataBottom = [
-    { img: "https://placehold.co/600x400/475569/ffffff?text=Project+8", link: "#" },
-    { img: "https://placehold.co/600x400/ca8a04/ffffff?text=Project+9", link: "#" },
-    { img: "https://placehold.co/600x400/65a30d/ffffff?text=Project+10", link: "#" },
-    { img: "https://placehold.co/600x400/be123c/ffffff?text=Project+11", link: "#" },
-    { img: "https://placehold.co/600x400/0e7490/ffffff?text=Project+12", link: "#" },
-    { img: "https://placehold.co/600x400/581c87/ffffff?text=Project+13", link: "#" },
-    { img: "https://placehold.co/600x400/9f1239/ffffff?text=Project+14", link: "#" },
+    { img: "/proj_08.png", link: "https://github.com/whynotsw-camp/wh02-3rd-3team-SHC" },
+    { img: "/proj_09.png", link: "https://github.com/whynotsw-camp/wh02-3rd-4team-YCJ" },
+    { img: "/proj_10.png", link: "https://github.com/whynotsw-camp/wh03-3rd-Ateam-BorderCollies" },
+    { img: "/proj_11.png", link: "https://github.com/whynotsw-camp/wh03-3rd-Bteam-Short-U" },
+    { img: "/proj_12.png", link: "https://github.com/whynotsw-camp/wh05-3rd-Pteam" },
+    { img: "/proj_13.png", link: "https://github.com/whynotsw-camp/wh05-3rd-JungSung" },
+    { img: "/proj_14.png", link: "https://github.com/whynotsw-camp/wh05-3rd-CHteam-JOB" },
 ];
 
 
