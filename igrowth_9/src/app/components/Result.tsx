@@ -8,32 +8,32 @@ const reviewData = [
     {
         img: "/igrowth.webp",
         text: "기초는 쌓였고, 이제는\n'써먹는 법'을 익힐 차례",
-        link: "#"
+        link: "https://velog.io/@kangte/LG-U-Why-Not-SW-CAMP-6%EA%B8%B0-4%EC%9B%94-5%EC%A3%BC%EC%B0%A8-%ED%9A%8C%EA%B3%A0"
     },
     {
         img: "/igrowth.webp",
         text: "배우고 쓰고 도전하며,\n익숙해지고 단단해지는 중",
-        link: "#"
+        link: "https://velog.io/@muneuy311/LG-U-Why-Not-SW-CAMP-7%EA%B8%B0-11%EC%A3%BC%EC%B0%A8-%ED%9A%8C%EA%B3%A0"
     },
     {
         img: "/igrowth.webp",
         text: "처음 접한 클라우드,\n낯섦 속에서 흐름 잡기",
-        link: "#"
+        link: "https://velog.io/@pminsang/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%82%B4-%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B2%98%EB%A6%AC-%EB%B0%8F-%EC%84%9C%EB%B9%84%EC%8A%A4%EA%B0%9C%EB%B0%9C-%EA%B3%B5%EB%B6%80-7.147.18"
     },
     {
         img: "/igrowth.webp",
         text: "서툰 협업이었으나 함께 부딪히며\n진짜 팀워크를 배웠다.",
-        link: "#"
+        link: "https://velog.io/@baehj0907/LG-U-Why-Not-SW-Camp-7%EA%B8%B0-7%EC%9B%94-3%EC%A3%BC%EC%B0%A8-%ED%9A%8C%EA%B3%A0"
     },
     {
         img: "/igrowth.webp",
         text: "보이는 것에 그치지 않고,\n의미를 찾는 데이터 여정을 시작하다.",
-        link: "#"
+        link: "https://velog.io/@iriseverywhere/LG-U-Why-Not-SW-Camp-7%EA%B8%B0-%EC%A3%BC%EC%B0%A8-%ED%9A%8C%EA%B3%A0-qs40sayl"
     },
     {
         img: "/igrowth.webp",
         text: "머릿속 지식을 코드로,\n코드에서 프로젝트로 확장하는 중",
-        link: "#"
+        link: "https://velog.io/@whtjsdud54/LG-U-Why-Not-SW-Camppython-6%EC%9B%94-2%EC%A3%BC%EC%B0%A8-%ED%9A%8C%EA%B3%A0%EB%A1%9D"
     },
 ];
 
