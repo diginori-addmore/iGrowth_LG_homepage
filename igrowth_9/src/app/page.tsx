@@ -9,6 +9,7 @@ import Result from "./components/Result";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import Job from "./components/Job";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function Page() {
     return (
@@ -25,6 +26,7 @@ export default function Page() {
             {/*
             <Testimonials /> */}
             <Footer />
+            <ScrollToTop />
         </>
     );
 }
