@@ -1,3 +1,7 @@
+"use client";
+
+import React from 'react';
+
 export default function Features() {
     const features = [
         {
@@ -47,15 +51,16 @@ export default function Features() {
     ];
 
     return (
-        <section id="features" className="py-20 px-6 bg-gradient-to-b from-pink-100 to-white">
-            <h2 className="text-2xl font-bold text-center mt-10 mb-3 text-pink-500">
+        <section id="features" className="py-16 px-4 md:py-20 md:px-6 bg-gradient-to-b from-pink-100 to-white">
+            <h2 className="text-xl md:text-2xl font-bold text-center mt-10 mb-3 text-pink-500">
                 왜 LG U+ Why Not SW Camp 인가요?
             </h2>
-            <h2 className="text-5xl font-bold text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
                 누구든지 확실한 성장을 이뤄낼 수 있습니다
             </h2>
 
-            <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            {/* 모바일: 1열 -> sm: 2열 -> md: 4열 */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
                 {features.map((feature, idx) => (
                     <div key={idx} className="text-center">
                         {/* 이미지 박스 */}
@@ -63,7 +68,7 @@ export default function Features() {
                             <img
                                 src={feature.img}
                                 alt={feature.title}
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
                             />
                         </div>
                         {/* 텍스트 영역 */}
