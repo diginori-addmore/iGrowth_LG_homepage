@@ -79,7 +79,7 @@ export default function FullCurriculum() {
     const categories = ["기초 학습", "Python 데이터 분석", "빅데이터", "AI & 고급 데이터", "프로젝트"];
     const buttonsByCategory = [
         [
-            { title: "인프라 및 클라우드 개요", detail: ["Linux 개요", "가상화 기술", "VirtualBox / WSL", "컨테이너 및 Docker", "AWS/Google 클라우드"] },
+            { title: "인프라 및 클라우드 개요", detail: ["Linux 개요", "가상화 기술", "VI, 실전 리눅스 명령어 / WSL", "컨테이너 및 Docker", "AWS/Google 클라우드"] },
             { title: "빅데이터 기술 개요", detail: ["생성형 AI 소개", "Prometheus & Grafana (모니터링)"] },
             { title: "Python 기초", detail: ["변수, 자료형", "조건문, 반복문", "입출력, 함수, 람다", "모듈 / 패키지 / 클래스", "내장함수, 표준 라이브러리"] },
             { title: "데이터베이스 기초", detail: ["데이터 및 데이터베이스 개념 이해", "데이터베이스 설치 및 실습", "SQL 기본 및 심화", "성능 튜닝"] }

@@ -11,19 +11,20 @@ export default function Hero() {
 
         {/* 모바일에서 제목 폰트 크기를 반응형으로 조정합니다. */}
         <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold leading-tight text-pink-500 px-4">
-          LG U+ Why Not SW Camp <br />
-          <span className="text-white text-3xl sm:text-4xl md:text-5xl block mt-2 md:mt-4">
-            클라우드 기반 빅데이터 분석 & 서비스 개발 과정 9기
+            LG U+ Why Not SW Camp <br />
+          <span className="text-white text-2xl sm:text-3xl md:text-4xl block mt-2 md:mt-4">
+            실무 + 클라우드 빅데이터 분석 &<br />
+            서비스 개발 과정
           </span>
         </h1>
 
         {/* 모바일에서 본문 폰트 크기와 상단 여백을 조정합니다. */}
         <p className="mt-4 md:mt-6 text-base sm:text-lg text-white max-w-2xl px-4">
-          Why Not SW Camp는 실무형 강의가 아닙니다.  <br />
-          실무 그 자체를 제공합니다&#33;  
-          실제 현업 프로젝트로 배우고, 팀 단위 협업과 배포까지 경험하며  
-          수료 후 곧바로 현업에 투입 가능한 개발자로 성장합니다. <br />
-          또한, 수료 후 실무 프로젝트 기반 경력 증명서를 수료증과 함께 발급해 드립니다.
+          🚫 무니만 실무형 강의 아님<br />
+          🔥 프로젝트 수주 & 실무 & 경력 빌드업 과정!<br />
+          👨‍🏫 네이버 출신 강사 + ✨ 카카오 출신 멘토와 함께<br />
+          💼 실제 고객 비용 지급 + 📜 경력 증명서 발급<br />
+          🇰🇷 국내 유일! 🎓 강의 + 💻 실무 동시 제공<br />
         </p>
 
         {/* 지원하기와 카카오톡 상담 버튼 */}
