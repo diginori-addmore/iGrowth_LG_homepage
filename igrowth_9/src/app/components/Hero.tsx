@@ -35,7 +35,7 @@ export default function Hero() {
             // 버튼에 호버 효과를 추가하여 사용자 경험을 개선합니다.
             className="px-8 py-4 bg-pink-600 text-white rounded-lg shadow-lg hover:bg-pink-700 transition-all duration-300 font-bold text-lg transform hover:scale-105"
           >
-            지원하기
+            후회 말고 지원하기
           </a>
           <a
             href="https://pf.kakao.com/_lTcxcG/chat"
