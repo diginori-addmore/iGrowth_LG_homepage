@@ -11,16 +11,16 @@ export default function FullCurriculum() {
             title: "PHASE 0",
             subtitle: "준비",
             content: {
-                heading: "PHASE 0: 준비",
-                info: "AI산업에 대하여 알아봅니다",
+                heading: "PHASE 0: 실전 AI & 빅데이터 취업 시장 항공뷰",
+                info: "가짜와 진짜를 판별하고 진짜 취업에 필요한 로드맵 제안",
                 sections: [
                     {
                         icon: CheckCircle,
-                        subheading: "프로젝트 사전조사",
-                        details: ["기업 및 산업서비스 환경분석", "사업추진 필요성 분석"],
+                        subheading: "실 프로젝트 요구사항",
+                        details: ["개발 의로 기업 고객 미팅", "현직 카카오, 넷마블 개발자와 함께 프로젝트 분석"],
                     },
-                    { icon: CheckCircle, subheading: "Quick-Review", details: ["기초자료 Pre-research"] },
-                    { icon: CheckCircle, subheading: "필요인력 직무 분석", details: [] },
+                    { icon: CheckCircle, subheading: "Quick-Review", details: ["요구사항 분석을 통해 무엇을 어떻게 배워야 하는지 플랜 공유"] },
+                    { icon: CheckCircle, subheading: "프로토타입 개발", details: ["프로개발자들과 함께 돈과 경력증명서 발급을 위한 프로토타이핑 방법 배우기"] },
                 ],
             },
         },
@@ -126,7 +126,7 @@ export default function FullCurriculum() {
                 <div className="text-center mb-12">
                     <h2 className="text-lg md:text-xl font-bold text-white mb-2">LG U+ Why Not SW Camp 만의</h2>
                     {/* 모바일: text-4xl / 데스크톱: text-5xl */}
-                    <p className="text-4xl md:text-5xl font-bold text-white">초고속 실력 향상 커리큘럼</p>
+                    <p className="text-4xl md:text-5xl font-bold text-white">다 필요 없고 경력 만들어 드리는 커리큘럼</p>
                 </div>
 
                 {/* 모바일: flex-col / 데스크톱: flex-row */}
