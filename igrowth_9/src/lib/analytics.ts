@@ -36,7 +36,7 @@ export function amplitudeInit() {
 
   add(sessionReplayPlugin({ sampleRate: 1 }));
 
-  const apiKey = process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY!;
+  const apiKey = "32f81f14fe0c7e676f05f6e336770d91"
   const config: Types.BrowserOptions = {
     fetchRemoteConfig: true,
     autocapture: {
