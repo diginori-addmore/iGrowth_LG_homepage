@@ -2,6 +2,7 @@ import "./globals.css";
 import { ReactNode } from "react";
 import AmplitudeProvider from "@/components/AmplitudeProvider";
 import type { Metadata } from "next";
+import { GoogleTagManager } from '@next/third-parties/google'
 
 export const metadata: Metadata = {
     title: "LG U+ 연계 | Why Not SW Camp",
@@ -26,6 +27,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
     return (
         <html lang="ko" className='dark'>
+            <GoogleTagManager gtmId={'GTM-N3F9ZPDK'} />
             <body className="font-sans bg-white text-gray-900">
                 <AmplitudeProvider>
                     {children}
@@ -34,4 +36,3 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </html>
     );
 }
-
