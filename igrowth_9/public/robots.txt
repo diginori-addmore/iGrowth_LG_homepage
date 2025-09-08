@@ -1,0 +1,39 @@
+# robots.txt — allow all crawlers (search + AI)
+# Place this file at: https://<your-domain>/robots.txt
+
+User-agent: *
+Allow: /
+
+# --- Explicit allow for common AI / data crawlers (not strictly required if "*" is allowed) ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Optional: point to your sitemap(s)
+# Sitemap: https://whynotcamp.igrowth.kr/sitemap.xml
