@@ -20,7 +20,7 @@ export default function Hero() {
 
         {/* 모바일에서 본문 폰트 크기와 상단 여백을 조정합니다. */}
         <p className="mt-4 md:mt-6 text-base sm:text-lg text-white max-w-2xl px-4">
-          🚫 무니만 실무형 강의 아님<br />
+          🚫 무늬만 실무형 강의 아님<br />
           🔥 프로젝트 수주 & 실무 & 경력 빌드업 과정!<br />
           👨‍🏫 네이버 출신 강사 + ✨ 카카오 출신 멘토와 함께<br />
           💼 실제 고객 비용 지급 + 📜 경력 증명서 발급<br />
