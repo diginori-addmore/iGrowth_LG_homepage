@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "LG U+ 연계 | Why Not SW Camp",
-    description: "Why Not SW Camp 랜딩페이지",
+    description: "LG U+ Why Not SW Camp 신청 페이지",
 
     openGraph: {
-        title: "LG U+ Why Not SW Camp(openGraph title)",
-        description: "부트캠프의 새로운 패러다임, 100% 실무 이력 만들기(openGraph description",
+        title: "LG U+ Why Not SW Camp",
+        description: "부트캠프의 새로운 패러다임, 100% 실무 이력 만들기",
         images: [
             {
                 url: "https://whynotcamp.igrowth.kr/open_graph.png",
