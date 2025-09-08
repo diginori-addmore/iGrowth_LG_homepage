@@ -8,7 +8,7 @@ export default function HeroCards() {
     return (
         <section className="mt-16 w-full max-w-6xl flex flex-col items-center gap-4 px-4 md:px-6">
             {/* 위쪽 3개 카드 */}
-            <div className="w-full flex flex-col md:flex-row justify-center gap-4 md:gap-7">
+            <div className="w-full flex flex-col md:flex-row justify-center z-10 gap-4 md:gap-7">
                 {cards.map((card, idx) => (
                     <div
                         key={idx}
@@ -36,7 +36,7 @@ export default function HeroCards() {
                 <div className="flex flex-col sm:flex-row justify-between items-center sm:items-end h-full p-2 sm:p-4">
 
                     {/* 왼쪽 텍스트 */}
-                    <div className="text-center sm:text-left">
+                    <div className="text-center sm:text-left z-10">
                         <h3 className="text-lg sm:text-xl font-bold text-black">총 교육비</h3>
                         <h3 className="text-3xl font-bold flex flex-wrap items-end justify-center sm:justify-start gap-2">
                             <span className="text-gray-500 line-through text-2xl sm:text-3xl">18,876,000원</span>

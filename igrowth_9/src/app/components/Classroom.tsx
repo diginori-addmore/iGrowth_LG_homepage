@@ -85,7 +85,7 @@ export default function Classroom() {
             <div className="container mx-auto max-w-6xl">
                 {/* 제목 섹션 */}
                 <div className="text-center mb-16">
-                    <h3 className="text-lg font-bold text-pink-500 mb-2">최적의 학습 환경</h3>
+                    <h3 className="text-lg md:text-xl font-bold text-pink-500 mb-2">최적의 학습 환경</h3>
                     <h2 className="text-3xl md:text-5xl font-bold text-gray-900">쾌적하고 몰입도 <br className='md:hidden' />높은 교육 공간</h2>
                 </div>
 
