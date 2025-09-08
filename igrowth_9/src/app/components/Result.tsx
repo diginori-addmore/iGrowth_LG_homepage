@@ -144,69 +144,93 @@ export default function Result() {
             {/* === 블로그 후기 섹션 === */}
             <div className="container mx-auto max-w-7xl">
                 <div className="text-center mb-16">
-                    <h3 className="text-xl font-bold text-pink-500 mb-2">&lsquo;진짜&rsquo; 후기에서 나타나는 강의 만족도</h3>
-                    <h2 className="text-4xl md:text-5xl py-2 font-bold text-gray-900">수료생들의</h2>
-                    <h2 className="text-4xl md:text-5xl py-2 font-bold text-gray-900">꾸밈없는 생생한 블로그 후기</h2>
+                    <h3 className="text-lg md:text-xl font-bold text-pink-500 mb-2">&lsquo;진짜&rsquo; 후기에서 나타나는 강의 만족도</h3>
+                    <h2 className="text-3xl md:text-5xl py-2 font-bold text-gray-900">수료생들의</h2>
+                    <h2 className="text-3xl md:text-5xl py-2 font-bold text-gray-900">꾸밈없는 생생한 블로그 후기</h2>
                 </div>
                 <div className="relative w-full overflow-hidden group">
-                    <div ref={reviewTrackRef} className="flex gap-8 py-6" style={{ willChange: 'transform' }}>
+                    <div ref={reviewTrackRef} className="flex gap-8 py-1 md:py-6" style={{ willChange: 'transform' }}>
                         {extendedReviews.map((review, index) => (
-                            <a key={index} href={review.link} target="_blank" rel="noopener noreferrer" className="flex-shrink-0 w-[320px] h-[280px] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                            <a
+                                key={index}
+                                href={review.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                // 모바일: w-[280px] h-[240px] / 데스크톱: w-[320px] h-[280px]
+                                className="flex-shrink-0 w-[250px] h-[150px] md:w-[320px] md:h-[280px] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105"
+                            >
                                 <div className="relative w-full h-4/5 bg-white flex items-center justify-center p-4">
                                     <img src={review.img} alt="Igrowth image" className="absolute inset-0 w-full h-full object-cover filter blur-sm opacity-80" />
-                                    <h4 className="relative z-10 text-xl font-bold text-gray-800 text-center whitespace-pre-line">{review.text}</h4>
+                                    {/* 모바일: text-lg / 데스크톱: text-xl */}
+                                    <h4 className="relative z-10 text-sm md:text-xl font-bold text-gray-800 text-center whitespace-pre-line">{review.text}</h4>
                                 </div>
                                 <div className="w-full h-1/5 bg-gray-800 flex items-center justify-between px-5">
-                                    <span className="text-white font-semibold">자세히 보기</span>
-                                    <ArrowRight className="w-5 h-5 text-white" />
+                                    <span className="text-xs md:text-lg text-white font-semibold">자세히 보기</span>
+                                    <ArrowRight className="w-4 md:w-5 h-5 text-white" />
                                 </div>
                             </a>
                         ))}
                     </div>
                     {/* Controls */}
                     <div className="absolute top-1/2 left-4 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <button onMouseDown={() => handlePress(1, 2.5)} onMouseUp={handleRelease} onMouseLeave={handleRelease} onTouchStart={() => handlePress(1, 2.5)} onTouchEnd={handleRelease} className="bg-white/70 hover:bg-white rounded-full p-3 shadow-md">
-                            <ChevronLeft className="w-6 h-6 text-gray-800" />
+                        <button onMouseDown={() => handlePress(1, 2.5)} onMouseUp={handleRelease} onMouseLeave={handleRelease} onTouchStart={() => handlePress(1, 2.5)} onTouchEnd={handleRelease} className="bg-white/70 hover:bg-white rounded-full p-2 md:p-3 shadow-md">
+                            <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 text-gray-800" />
                         </button>
                     </div>
                     <div className="absolute top-1/2 right-4 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <button onMouseDown={() => handlePress(-1, 2.5)} onMouseUp={handleRelease} onMouseLeave={handleRelease} onTouchStart={() => handlePress(-1, 2.5)} onTouchEnd={handleRelease} className="bg-white/70 hover:bg-white rounded-full p-3 shadow-md">
-                            <ChevronRight className="w-6 h-6 text-gray-800" />
+                        <button onMouseDown={() => handlePress(-1, 2.5)} onMouseUp={handleRelease} onMouseLeave={handleRelease} onTouchStart={() => handlePress(-1, 2.5)} onTouchEnd={handleRelease} className="bg-white/70 hover:bg-white rounded-full p-2 md:p-3 shadow-md">
+                            <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-gray-800" />
                         </button>
                     </div>
                 </div>
             </div>
 
             {/* === 프로젝트 결과물 섹션 === */}
-            <div className="container mx-auto max-w-7xl mt-40">
+            <div className="container mx-auto max-w-7xl mt-20 md:mt-40">
                 <div className="text-center mb-16">
-                    <h3 className="text-xl font-bold text-pink-500 mb-2">훈련생 포트폴리오</h3>
-                    <h2 className="text-4xl md:text-5xl py-2 font-bold text-gray-900">아이디어와 기술력이 담긴</h2>
-                    <h2 className="text-4xl md:text-5xl py-2 font-bold text-gray-900">프로젝트 결과물</h2>
+                    <h3 className="text-lg md:text-xl font-bold text-pink-500 mb-2">훈련생 포트폴리오</h3>
+                    <h2 className="text-3xl md:text-5xl py-2 font-bold text-gray-900">아이디어와 기술력이 담긴</h2>
+                    <h2 className="text-3xl md:text-5xl py-2 font-bold text-gray-900">프로젝트 결과물</h2>
                 </div>
                 <div className="w-full overflow-hidden space-y-1">
-                    <div ref={projectTopTrackRef} className="flex gap-8 py-6" style={{ willChange: 'transform' }}>
+                    {/* Top Row */}
+                    <div ref={projectTopTrackRef} className="flex gap-8 py-1 md:py-6" style={{ willChange: 'transform' }}>
                         {extendedProjectsTop.map((project, index) => (
-                            <a key={`top-${index}`} href={project.link} target="_blank" rel="noopener noreferrer" className="flex-shrink-0 w-[320px] h-[240px] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                            <a
+                                key={`top-${index}`}
+                                href={project.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                // 모바일: w-[280px] h-[210px] / 데스크톱: w-[320px] h-[240px]
+                                className="flex-shrink-0 w-[230px] h-[150px] md:w-[320px] md:h-[240px] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105"
+                            >
                                 <div className="w-full h-4/5 bg-white">
                                     <img src={project.img} alt={`Project image ${index + 1}`} className="w-full h-full object-cover" />
                                 </div>
                                 <div className="w-full h-1/5 bg-gray-800 flex items-center justify-between px-5">
-                                    <span className="text-white font-semibold">자세히 보기</span>
-                                    <ArrowRight className="w-5 h-5 text-white" />
+                                    <span className="text-xs md:text-lg text-white font-semibold">자세히 보기</span>
+                                    <ArrowRight className="w-4 md:w-5 h-5 text-white" />
                                 </div>
                             </a>
                         ))}
                     </div>
+                    {/* Bottom Row */}
                     <div ref={projectBottomTrackRef} className="flex gap-8 py-6" style={{ willChange: 'transform' }}>
                         {extendedProjectsBottom.map((project, index) => (
-                            <a key={`bottom-${index}`} href={project.link} target="_blank" rel="noopener noreferrer" className="flex-shrink-0 w-[320px] h-[240px] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                            <a
+                                key={`bottom-${index}`}
+                                href={project.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                // 모바일: w-[280px] h-[210px] / 데스크톱: w-[320px] h-[240px]
+                                className="flex-shrink-0 w-[230px] h-[150px] md:w-[320px] md:h-[240px] rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105"
+                            >
                                 <div className="w-full h-4/5 bg-white">
                                     <img src={project.img} alt={`Project image ${index + 8}`} className="w-full h-full object-cover" />
                                 </div>
                                 <div className="w-full h-1/5 bg-gray-800 flex items-center justify-between px-5">
-                                    <span className="text-white font-semibold">자세히 보기</span>
-                                    <ArrowRight className="w-5 h-5 text-white" />
+                                    <span className="text-xs md:text-lg text-white font-semibold">자세히 보기</span>
+                                    <ArrowRight className="w-4 md:w-5 h-5 text-white" />
                                 </div>
                             </a>
                         ))}
