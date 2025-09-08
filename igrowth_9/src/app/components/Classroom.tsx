@@ -104,10 +104,10 @@ export default function Classroom() {
                         <h4 className="text-lg md:text-xl font-bold text-white text-center">{activeImage.title}</h4>
                     </div>
 
-                    {/* 이미지 설명 (하단 그라데이션) */}
+                    {/* 이미지 설명 (하단 그라데이션)
                     <div className="absolute bottom-0 left-0 w-full h-2/5 bg-gradient-to-t from-white via-white/90 to-transparent p-6 flex items-end">
                         <p className="text-gray-800 text-sm md:text-lg">{activeImage.description}</p>
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* 썸네일 갤러리 (B) - 모바일 그리드 레이아웃으로 변경 */}

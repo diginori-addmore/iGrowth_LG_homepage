@@ -32,7 +32,8 @@ export default function Features() {
                 <>
                     직접 기업에서 수주한 <span className="text-pink-600 font-bold">3회+ 프로젝트</span>로
                     <br />
-                    실전 역량 및 경력자로 변신 두마리 토끼를 잡아 드립니다.
+                    실전 역량 및 경력있는 개발자로 <br />
+                    만들어 드립니다
                 </>
             )
         },
@@ -41,9 +42,10 @@ export default function Features() {
             title: "빠른 역량 향상",
             description: (
                 <>
-                    <span className="text-pink-600 font-bold">최신 바이브 코딩</span>기법을 알려드립니다.
+                    <span className="text-pink-600 font-bold">최신 바이브 코딩</span> 기법을 알려드립니다.
                     <br />
-                    실전 경험이 없는 바이브 코딩은 다 가짜입니다. 진짜를 배우세요.
+                    실전 경험이 없는 가짜 바이브 코딩이<br />
+                    아닌 진짜를 배우세요.
                 </>
             )
         }
@@ -55,7 +57,7 @@ export default function Features() {
                 왜 LG U+ Why Not SW Camp 인가요?
             </h2>
             <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
-                누구든지 실 프로젝트 수행 경력의 개발자로 변신 책임 보장
+                누구든 실무 수행 경력의 개발자로 만들어 드립니다
             </h2>
 
             {/* 모바일: 1열 -> sm: 2열 -> md: 4열 */}

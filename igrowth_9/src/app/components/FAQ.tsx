@@ -66,7 +66,7 @@ export default function FAQ() {
                                     }`}
                             >
                                 <div className="px-6 pb-6">
-                                    <p className="text-sm text-gray-300">{faq.answer}</p>
+                                    <p className="text-lg text-gray-300">{faq.answer}</p>
                                 </div>
                             </div>
                         </div>
