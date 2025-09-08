@@ -11,16 +11,16 @@ export default function FullCurriculum() {
             title: "PHASE 0",
             subtitle: "준비",
             content: {
-                heading: "PHASE 0: 준비",
-                info: "AI산업에 대하여 알아봅니다",
+                heading: "PHASE 0: 실전 AI & 빅데이터 취업 시장 항공뷰",
+                info: "가짜와 진짜를 판별하고 진짜 취업에 필요한 로드맵 제안",
                 sections: [
                     {
                         icon: CheckCircle,
-                        subheading: "프로젝트 사전조사",
-                        details: ["기업 및 산업서비스 환경분석", "사업추진 필요성 분석"],
+                        subheading: "실 프로젝트 요구사항",
+                        details: ["개발 의로 기업 고객 미팅", "현직 카카오, 넷마블 개발자와 함께 프로젝트 분석"],
                     },
-                    { icon: CheckCircle, subheading: "Quick-Review", details: ["기초자료 Pre-research"] },
-                    { icon: CheckCircle, subheading: "필요인력 직무 분석", details: [] },
+                    { icon: CheckCircle, subheading: "Quick-Review", details: ["요구사항 분석을 통해 무엇을 어떻게 배워야 하는지 플랜 공유"] },
+                    { icon: CheckCircle, subheading: "프로토타입 개발", details: ["프로개발자들과 함께 돈과 경력증명서 발급을 위한 프로토타이핑 방법 배우기"] },
                 ],
             },
         },
@@ -79,7 +79,7 @@ export default function FullCurriculum() {
     const categories = ["기초 학습", "Python 데이터 분석", "빅데이터", "AI & 고급 데이터", "프로젝트"];
     const buttonsByCategory = [
         [
-            { title: "인프라 및 클라우드 개요", detail: ["Linux 개요", "가상화 기술", "VirtualBox / WSL", "컨테이너 및 Docker", "AWS/Google 클라우드"] },
+            { title: "인프라 및 클라우드 개요", detail: ["Linux 개요", "가상화 기술", "VI, 실전 리눅스 명령어 / WSL", "컨테이너 및 Docker", "AWS/Google 클라우드"] },
             { title: "빅데이터 기술 개요", detail: ["생성형 AI 소개", "Prometheus & Grafana (모니터링)"] },
             { title: "Python 기초", detail: ["변수, 자료형", "조건문, 반복문", "입출력, 함수, 람다", "모듈 / 패키지 / 클래스", "내장함수, 표준 라이브러리"] },
             { title: "데이터베이스 기초", detail: ["데이터 및 데이터베이스 개념 이해", "데이터베이스 설치 및 실습", "SQL 기본 및 심화", "성능 튜닝"] }
