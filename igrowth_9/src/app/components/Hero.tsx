@@ -26,20 +26,20 @@ export default function Hero() {
 
         {/* 모바일에서 제목 폰트 크기를 반응형으로 조정합니다. */}
         <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold leading-tight text-pink-500 px-4 relative z-10">
-            LG U+ Why Not SW Camp <br />
+          LG U+ Why Not SW Camp <br />
           <span className="text-white text-3xl sm:text-4xl md:text-5xl block mt-2 md:mt-4">
-            실무 + 클라우드 빅데이터 분석 &<br />
-            서비스 개발 과정
+            클라우드 빅데이터 분석 &<br />
+            실무 기반 서비스 개발 과정
           </span>
         </h1>
 
         {/* 모바일에서 본문 폰트 크기와 상단 여백을 조정합니다. */}
         <p className="mt-4 md:mt-6 text-base sm:text-lg text-white max-w-2xl px-4 relative z-10">
-          🚫 무늬만 실무형 강의 아님<br />
-          🔥 프로젝트 수주 & 실무 & 경력 빌드업 과정!<br />
-          👨‍🏫 네이버 출신 강사 + ✨ 카카오 출신 멘토와 함께<br />
-          💼 실제 고객 비용 지급 + 📜 경력 증명서 발급<br />
-          🇰🇷 국내 유일! 🎓 강의 + 💻 실무 동시 제공<br />
+          <br />
+          프로젝트 수주 & 실무 & 경력 빌드업 과정!<br />
+          네이버 출신 강사 + 카카오 출신 멘토와 함께<br />
+          경력 증명서 + 수료증 발급<br />
+          국내 유일! 강의 + 실무 경험 제공<br />
         </p>
 
         <div className="mt-8 md:mt-12 flex flex-row justify-center gap-4 relative z-10">
@@ -47,7 +47,7 @@ export default function Hero() {
             href="https://igrowth.recruit.roundhr.com/c/RWTJ5MAHQN/apply"
             className="px-8 py-4 bg-pink-600 text-white rounded-lg shadow-lg hover:bg-pink-700 transition-all duration-300 font-bold text-lg transform hover:scale-105"
           >
-            후회 말고 지원하기
+            지원하기
           </a>
           <a
             href="https://pf.kakao.com/_lTcxcG/chat"
