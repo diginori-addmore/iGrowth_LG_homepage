@@ -17,10 +17,14 @@ export default function FullCurriculum() {
                     {
                         icon: CheckCircle,
                         subheading: "실 프로젝트 요구사항",
-                        details: ["개발 의로 기업 고객 미팅", "현직 카카오, 넷마블 개발자와 함께 프로젝트 분석"],
+                        details: ["- 가상이 아닌 진짜 고객이 발주한 프로젝트로 요구사항 분석", "현직 카카오, 넷마블 개발자와 함께 프로젝트 분석"],
                     },
-                    { icon: CheckCircle, subheading: "Quick-Review", details: ["요구사항 분석을 통해 무엇을 어떻게 배워야 하는지 플랜 공유"] },
-                    { icon: CheckCircle, subheading: "프로토타입 개발", details: ["프로개발자들과 함께 돈과 경력증명서 발급을 위한 프로토타이핑 방법 배우기"] },
+                    { icon: CheckCircle, 
+                        subheading: "Quick-Review", 
+                        details: ["- 요구사항 분석을 통해 무엇을 어떻게 배워야 하는지 수강생 스스로 학습 플랜 수립 with 현직자 멘토링"] },
+                    { icon: CheckCircle, 
+                        subheading: "프로토타입 개발", 
+                        details: ["- 현직 개발자들과 함께 페이코딩을 통해 프로토타이핑 프로젝트 수행 및 경력 증명서 발급 및 작업비용 수령"] },
                 ],
             },
         },
@@ -35,18 +39,24 @@ export default function FullCurriculum() {
                     {
                         icon: CheckCircle,
                         subheading: "Step 1",
-                        details: ["빅데이터 및 클라우드 기초", "Python 프로그래밍 기초", "SQL 기초"],
+                        details: [
+                            "- 빅데이터 및 클라우드 기초 - AWS, GCP, BASS(vercel,fly.io) ... 실습 및 클라우드 이해", 
+                            "- Python 프로그래밍 기초 - 책에 나온 모든 것 보다 실무에서 당장 쓸 수 있는 것 부터 & 수강생 모두의 수준에 맞춰 파이썬 기초 마스터", 
+                            "- SQL 기초 - 현업에서 많이 사용되는 mySQL 부터 클라우드형 supabase 까지, 현업과 협업하는데 필요한 실전 SQL 학습"],
                     },
                     {
                         icon: CheckCircle,
                         subheading: "Step 2",
                         details: [
-                            "Python 데이터 분석",
-                            "클라우드 기반 데이터 처리 / 저장 / 관리기술",
-                            "클라우드 기반 빅데이터 분석 및 시각화 1",
+                            "- Python을 활용한 데이터 분석 - 캐시슬라이드, 라인, 클러바, 네이버 검색, 네이버 쇼핑 경력자가 알려주는 실전 데이터 분석",
+                            "- 클라우드 기반 데이터 처리/저장/관리기술 - 아파치 제플린 에반젤리스트, 데이터야놀자 창립맴버 경력의 강사가 알려주는 ETL 의 모든 것, 국내 최대 데이터 파이프라인 구축/운영 경험 전수",
+                            "- 클라우드 기반 빅데이터 분석 및 시각화 - 라인게임 어뷰징 벤처리 사례로 알아보는 빅데이터 분석 및 시각화",
                         ],
                     },
-                    { icon: CheckCircle, subheading: "Step 3", details: ["클라우드 기반 빅데이터 분석 및 시각화 2"] },
+                    { icon: CheckCircle, 
+                        subheading: "Step 3", 
+                        details: ["- 클라우드 기반 빅데이터 분석 및 시각화 - supabase metabae 기반 리텐션 매출 대시보드 BI 시각화"] 
+                    },
                 ],
             },
         },
@@ -55,22 +65,61 @@ export default function FullCurriculum() {
             subtitle: "훈련과정(프로젝트)",
             content: {
                 heading: "PHASE 2: 프로젝트",
-                info: "학습 내용에 기반해 실무 프로젝트를 진행합니다",
+                info: "학습 내용에 기반 실 고객이 있는 프로젝트를 진행",
                 sections: [
-                    { icon: Rocket, subheading: "[프로젝트 1] 기획 / 설계", details: ["기업 맞춤형 빅데이터 분석 서비스 기획 및 설계"] },
-                    { icon: Rocket, subheading: "[프로젝트 2] Prototype 개발", details: ["클라우드 내 데이터 수집 / 분석 / 시각화"] },
-                    { icon: Rocket, subheading: "[프로젝트 3] 실 서비스 개발", details: ["데이터 분석 프로젝트"] },
+                    { icon: Rocket, subheading: "[프로젝트 1] 애자일 기반 MVP 서비스 개발", 
+                        details: [
+                            "- 네이버 출신 25년차 강사 + 카카오 출신 20년차 멘토(정구범)와 함께 서비스 분석",
+                            "- 국내 유일 가상의 고객이 아닌 실 고객과 업무 미팅 통한 요구사항 도출",
+                            "- 빅데이터를 적용한 서비스 클라우드 배포",
+                            "- 실 고객 계약 금액에 따른 팀별 지원금 수령 및 경력증명서 발급",
+                        ] 
+                        },
+
+                    { icon: Rocket, subheading: "[프로젝트 2] 서비스 데이터 분석 적용 및 고도화", 
+                        details: [
+                            "- 서비스 유입, 클릭, 효과 측정을 위한 데이터 파이프라인 구축",
+                            "- 수집된 데이터 기반 실 고객 데이터를 이용한 데이터 분석 및 가설 수립",
+                            "- A/B 테스트를 통한 가설 실험 및 고도화 제안 포트폴리오 작성",
+                            "- 다양한 클라우드 배포전략(카나리 배포등) 통한 고객 반응 수집 및 롤백 전략",
+                            "- 실 고객 계약 금액에 따른 팀별 지원금 수령 및 경력증명서 발급",
+                        ] 
+                    },
+                    { icon: Rocket, subheading: "[프로젝트 3] 실 서비스 개발", 
+                        details: [
+                            "- GCP, BAAS, AWS 등 다양한 클라우드 특성에 따른 비용 최적화 및 운영 노하우",
+                            "- 대규모 파이프라인을 위한 Apache Airflow 및 Apache Zepplin 에반젤리스 직강 Zepplin & Spark & Hadoop 구성 및 운영",
+                            "- MLOps, AIOps 를 통한 서비스 고도화 및 서비스 발전 및 시장대응 전략 구성",
+                            "- 실 고객 계약 금액에 따른 팀별 지원금 수령 및 경력증명서 발급",
+                        ] },
                 ],
-            },
+            }
         },
         {
             title: "PHASE 3",
-            subtitle: "평가",
+            subtitle: "JUMP UP",
             content: {
-                heading: "PHASE 3: 평가",
-                info: "문구 추천 받습니다",
+                heading: "PHASE 3: JUMP UP",
+                info: "상용화 및 창업 연계",
                 sections: [
-                    { icon: Award, subheading: "프로젝트 경진대회", details: ["프로젝트 회고", "산출물 평가", "성과 관리"] },
+                    { icon: Award, subheading: "애자일 회고", 
+                        details: [
+                            "- 네이버, 카카오 애자일 코치 초빙 회고 진행", 
+                            "- 회사에서 원하는 팀워크 및 팀빌딩 워크샵", 
+                            "- 프로젝트 성공/실패 요인 분석에 따른 JUMP UP 플랜 수립"] },
+                    { icon: Award, subheading: "팀 빌딩", 
+                        details: [
+                            "- KDT 해커톤 출전을 위한 멘토링", 
+                            "- 청년 창업 연계 컨설팀 및 사업계획서 작성 지원", 
+                            "- AI 국책과제 도전 및 스타트업 팁스 도전 & 창업 및 사무공간 지원"] 
+                        },
+                    { icon: Award, subheading: "취업 연계", 
+                        details: [
+                            "- 데이터야놀자 & 노안콘 연사 및 협력 멘토링 100인 1:1 취업 컨설팅", 
+                            "- 멘토링단 중 채용기업 인재 추천 및 추천서 작성",
+                            "- 노안콘, 데이터야놀자, 파이콘 ... 국내 유명 오픈소스 커뮤니티 연결 및 자원봉사 연결 - 네트워킹 역량 증대"
+                        ] 
+                        },
                 ],
             },
         },
@@ -102,7 +151,7 @@ export default function FullCurriculum() {
         [
             { title: "AI 활용 서비스 기획 / 설계", detail: ["문제 정의 및 상세 주제 설정", "생성형 AI 활용한 자료조사 및 벤치마킹", "아이디어 도출 및 서비스 시나리오 작성", "요구사항 도출 및 수행 단계 수립", "WBS 작성 및 Prototype 개발"] },
             { title: "미니 프로젝트 : 분석 및 예측", detail: ["프로젝트 정의 및 요구사항 정의", "데이터 정의 및 수집", "데이터 전처리 (중복 데이터, 이상치 제거 등)", "데이터 분석 및 모델 개발", "결과 도출 및 모델 평가"] },
-            { title: "인공지능 활용 빅테크 혁신 프로젝트", detail: ["문제 정의 및 게획 수립", "데이터 정의 및 수집 / 라벨링", "데이터 전처리 (중복 데이터, 이상치 제거 등)", "모델 개발 및 튜닝 (데이터 훈련 및 디버깅", "결과 도출 및 모델 평가"] },
+            { title: "인공지능 활용 빅테크 혁신 프로젝트", detail: ["문제 정의 및 계획 수립", "데이터 정의 및 수집 / 라벨링", "데이터 전처리 (중복 데이터, 이상치 제거 등)", "모델 개발 및 튜닝 (데이터 훈련 및 디버깅", "결과 도출 및 모델 평가"] },
         ]
     ];
 
