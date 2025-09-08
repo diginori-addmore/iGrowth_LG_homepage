@@ -5,7 +5,6 @@ import Labtop from "./components/Labtop";
 import Curriculum from "./components/Curriculum";
 import Teacher from "./components/Teacher";
 import Result from "./components/Result";
-// import Testimonials from "./components/Testimonials";
 import Award from "./components/Award";
 import Classroom from "./components/Classroom";
 import FAQ from "./components/FAQ";
@@ -28,8 +27,6 @@ export default function Page() {
             <Award />
             <Classroom />
             <FAQ />
-            {/*
-            <Testimonials /> */}
             <Location />
             <Footer />
             <ScrollToTop />
