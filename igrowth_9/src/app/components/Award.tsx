@@ -8,7 +8,8 @@ export default function Award() {
         <section className="relative bg-[#020204] text-white py-40 px-6 overflow-hidden">
 
             {/* 새로운 배경 이미지: z-0으로 맨 뒤에 배치 */}
-            <div className="absolute bottom-0 left-0 right-0 h-3/4 z-0 opacity-70">
+            {/* 모바일: h-1/2 / 데스크톱: md:h-3/4 */}
+            <div className="absolute bottom-0 left-0 right-0 h-2/3 md:h-3/4 z-0 opacity-70">
                 <img
                     src="/award_effect.png"
                     alt="Abstract background"
@@ -21,16 +22,16 @@ export default function Award() {
 
                 {/* 제목 섹션 */}
                 <div className="text-center mb-16">
-                    <h3 className="text-xl font-bold text-pink-500 mb-2">
+                    <h3 className="text-lg md:text-xl font-bold text-pink-500 md-1 md:mb-2">
                         대외적으로 인정받은 교육 과정
                     </h3>
-                    <h2 className="text-4xl md:text-5xl font-bold text-white">
+                    <h2 className="text-3xl md:text-5xl font-bold text-white">
                         우수 훈련기관 수상 이력
                     </h2>
                 </div>
 
                 {/* 이미지 레이아웃 섹션 */}
-                <div className="flex flex-col items-center gap-8">
+                <div className="flex flex-col items-center gap-3 md:gap-8">
 
                     {/* 첫 번째 가로 이미지 */}
                     <div className="w-full md:w-4/5 transform transition-transform duration-300 hover:scale-105">
@@ -51,22 +52,26 @@ export default function Award() {
                     </div>
 
                     {/* 세 개의 정사각형 이미지 */}
-                    <div className="flex flex-col md:flex-row justify-center gap-8 w-full mt-8">
-                        <div className="w-full md:w-1/3 transform transition-transform duration-300 hover:scale-105">
+                    {/* 모바일: flex-row, gap-4 / 데스크톱: md:gap-8 */}
+                    <div className="flex flex-row justify-center gap-4 md:gap-8 w-full mt-1 md:mt-8">
+                        {/* 모바일: w-1/3 / 데스크톱: md:w-1/3 */}
+                        <div className="w-1/3 transform transition-transform duration-300 hover:scale-105">
                             <img
                                 src="/awarded_01.jpg"
                                 alt="Award 3"
                                 className="w-full h-auto shadow-2xl border-2 border-yellow-800 aspect-square object-cover"
                             />
                         </div>
-                        <div className="w-full md:w-1/3 transform transition-transform duration-300 hover:scale-105">
+                        {/* 모바일: w-1/3 / 데스크톱: md:w-1/3 */}
+                        <div className="w-1/3 transform transition-transform duration-300 hover:scale-105">
                             <img
                                 src="/awarded_02.jpg"
                                 alt="Award 4"
                                 className="w-full h-auto shadow-2xl border-2 border-yellow-800 aspect-square object-cover"
                             />
                         </div>
-                        <div className="w-full md:w-1/3 transform transition-transform duration-300 hover:scale-105">
+                        {/* 모바일: w-1/3 / 데스크톱: md:w-1/3 */}
+                        <div className="w-1/3 transform transition-transform duration-300 hover:scale-105">
                             <img
                                 src="/awarded_03.jpg"
                                 alt="Award 5"
@@ -78,9 +83,9 @@ export default function Award() {
 
                 {/* 홍보 문구 섹션 */}
                 <div className="text-center mt-20">
-                    <p className="text-2xl md:text-3xl font-semibold text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    <p className="text-2xl md:text-3xl font-semibold text-white max-w-3xl mx-auto leading-relaxed">
                         수많은 수상 경력이 증명하는<br />
-                        <span className="text-pink-400">체계적이고 전문적인 교육 시스템</span>을 경험하세요.
+                        <span className="text-pink-400">체계적이고 전문적인 교육 시스템</span>을 <br className='md:hidden' />경험하세요.
                     </p>
                 </div>
 

@@ -8,14 +8,15 @@ export default function HeroCards() {
     return (
         <section className="mt-16 w-full max-w-6xl flex flex-col items-center gap-4 px-4 md:px-6">
             {/* 위쪽 3개 카드 */}
-            <div className="w-full flex flex-col md:flex-row justify-center gap-4 md:gap-7">
+            <div className="w-full flex flex-col md:flex-row justify-center z-10 gap-4 md:gap-7">
                 {cards.map((card, idx) => (
                     <div
                         key={idx}
-                        // 모바일: w-full / 데스크톱: w-80
-                        className="bg-gray-200 rounded-lg shadow-md p-5 flex flex-col items-center justify-center text-center w-full md:w-80 hover:shadow-2xl transition-shadow duration-300"
+                        // 모바일: p-4 / 데스크톱: p-5
+                        className="bg-gray-200 rounded-lg shadow-md p-4 md:p-5 flex flex-col items-center justify-center text-center w-full md:w-80 hover:shadow-2xl transition-shadow duration-300"
                     >
-                        <h3 className="text-2xl font-bold mb-3 bg-gradient-to-r from-orange-600 via-yellow-500 to-orange-700 bg-clip-text text-transparent">
+                        {/* 모바일: text-xl / 데스크톱: text-2xl */}
+                        <h3 className="text-xl md:text-2xl font-bold mb-3 bg-gradient-to-r from-orange-600 via-yellow-500 to-orange-700 bg-clip-text text-transparent">
                             {card.title}
                         </h3>
                         <p className="text-gray-700 font-bold text-lg md:text-xl">{card.line1}</p>
@@ -35,7 +36,7 @@ export default function HeroCards() {
                 <div className="flex flex-col sm:flex-row justify-between items-center sm:items-end h-full p-2 sm:p-4">
 
                     {/* 왼쪽 텍스트 */}
-                    <div className="text-center sm:text-left">
+                    <div className="text-center sm:text-left z-10">
                         <h3 className="text-lg sm:text-xl font-bold text-black">총 교육비</h3>
                         <h3 className="text-3xl font-bold flex flex-wrap items-end justify-center sm:justify-start gap-2">
                             <span className="text-gray-500 line-through text-2xl sm:text-3xl">18,876,000원</span>

@@ -26,7 +26,7 @@ export default function FAQ() {
             question: "과정 신청 후 절차가 어떻게 되나요?",
             answer: "신청 페이지에서 과정 신청이 완료가 되면 매니저가 순차적으로 개별 연락을 드리고 있습니다! 2~3 영업 일 이내에 매니저가 연락을 드리나 과정에 따라 기간이 소요 될 수 있으니 참고 바랍니다."
         }
-        
+
     ];
 
     const toggleItem = (index: number) => {
@@ -45,7 +45,7 @@ export default function FAQ() {
                 </div>
                 <div className="space-y-4">
                     {faqs.map((faq, index) => (
-                        <div 
+                        <div
                             key={index}
                             className="bg-white/10 rounded-lg overflow-hidden hover:bg-white/15 transition-colors duration-300"
                         >
@@ -54,18 +54,16 @@ export default function FAQ() {
                                 className="w-full p-6 text-left flex justify-between items-center focus:outline-none"
                             >
                                 <h4 className="font-semibold text-lg text-white pr-4">{faq.question}</h4>
-                                <ChevronDown 
-                                    className={`w-5 h-5 text-pink-400 transition-transform duration-300 ${
-                                        openItems[index] ? 'rotate-180' : 'rotate-0'
-                                    }`}
+                                <ChevronDown
+                                    className={`w-5 h-5 text-pink-400 transition-transform duration-300 ${openItems[index] ? 'rotate-180' : 'rotate-0'
+                                        }`}
                                 />
                             </button>
-                            <div 
-                                className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                                    openItems[index] 
-                                        ? 'max-h-32 opacity-100' 
-                                        : 'max-h-0 opacity-0'
-                                }`}
+                            <div
+                                className={`overflow-hidden transition-all duration-500 ease-in-out ${openItems[index]
+                                    ? 'max-h-32 opacity-100'
+                                    : 'max-h-0 opacity-0'
+                                    }`}
                             >
                                 <div className="px-6 pb-6">
                                     <p className="text-sm text-gray-300">{faq.answer}</p>

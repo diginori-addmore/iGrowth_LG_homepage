@@ -51,10 +51,10 @@ export default function Features() {
 
     return (
         <section id="features" className="py-16 px-4 md:py-20 md:px-6 bg-gradient-to-b from-pink-100 to-white">
-            <h2 className="text-xl md:text-2xl font-bold text-center mt-10 mb-3 text-pink-500">
+            <h2 className="text-sm md:text-2xl font-bold text-center mt-10 mb-3 text-pink-500">
                 왜 LG U+ Why Not SW Camp 인가요?
             </h2>
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
+            <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
                 누구든지 실 프로젝트 수행 경력의 개발자로 변신 책임 보장
             </h2>
 
@@ -71,8 +71,8 @@ export default function Features() {
                             />
                         </div>
                         {/* 텍스트 영역 */}
-                        <h3 className="text-left text-xl font-bold mb-2">{feature.title}</h3>
-                        <p className="text-left text-gray-500 font-medium mb-10">{feature.description}</p>
+                        <h3 className="text-center md:text-left text-lg md:text-xl font-bold mb-2">{feature.title}</h3>
+                        <p className="text-center md:text-left text-gray-500 font-medium mb-10">{feature.description}</p>
                     </div>
                 ))}
             </div>
