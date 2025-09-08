@@ -44,7 +44,7 @@ const classroomData = [
 
 export default function Classroom() {
     const [activeIndex, setActiveIndex] = useState(0);
-    const timeoutRef = useRef(null);
+    const timeoutRef = useRef<number | null>(null);
 
     // 자동 슬라이드 기능
     const resetTimeout = () => {
@@ -55,7 +55,7 @@ export default function Classroom() {
 
     useEffect(() => {
         resetTimeout();
-        timeoutRef.current = setTimeout(
+        timeoutRef.current = window.setTimeout(
             () => setActiveIndex((prevIndex) => (prevIndex + 1) % classroomData.length),
             3000 // 3초마다 이미지 변경
         );
@@ -65,14 +65,14 @@ export default function Classroom() {
         };
     }, [activeIndex]);
 
-    const handleThumbnailHover = (index) => {
+    const handleThumbnailHover = (index: number) => {
         resetTimeout(); // 자동 슬라이드 정지
         setActiveIndex(index);
     };
 
     const handleMouseLeave = () => {
         // 마우스를 떼면 다시 자동 슬라이드 시작
-        timeoutRef.current = setTimeout(
+        timeoutRef.current = window.setTimeout(
             () => setActiveIndex((prevIndex) => (prevIndex + 1) % classroomData.length),
             3000
         );
