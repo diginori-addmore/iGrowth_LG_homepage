@@ -1,5 +1,6 @@
 import "./globals.css";
 import { ReactNode } from "react";
+import AmplitudeProvider from "@/components/AmplitudeProvider";
 
 export const metadata = {
     title: "LG U+ 연계 | Why Not SW Camp",
@@ -10,7 +11,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     return (
         <html lang="ko" className='dark'>
             <body className="font-sans bg-white text-gray-900">
-                {children}
+                <AmplitudeProvider>
+                    {children}
+                </AmplitudeProvider>
             </body>
         </html>
     );
