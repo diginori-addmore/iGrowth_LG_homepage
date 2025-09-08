@@ -14,7 +14,7 @@ export default function Hero() {
       >
         {/* 배경 이미지와 그라데이션 오버레이 */}
         <div
-          className="absolute top-0 left-0 w-full h-[37%] bg-cover bg-top bg-no-repeat z-0" // 상단 40% 영역에만 적용
+          className="absolute top-0 left-0 w-full h-[45%] bg-cover bg-top bg-no-repeat z-0" // 상단 40% 영역에만 적용
           style={{
             backgroundImage: "url('/lgup_exhi.jpg')", // 여기에 사용할 이미지 경로를 넣어주세요.
             // 이미지가 상단에만 나타나고 하단은 페이드아웃 되도록 마스크 적용
@@ -24,7 +24,7 @@ export default function Hero() {
         ></div>
 
         {/* 어두운 오버레이를 추가하여 텍스트 가독성을 높입니다. (선택 사항, 필요 없으면 제거) */}
-        <div className="absolute top-0 left-0 w-full h-[37%] bg-black opacity-20 z-0"></div> {/* 이미지 영역에만 오버레이 적용 */}
+        <div className="absolute top-0 left-0 w-full h-[45%] bg-black opacity-20 z-0"></div> {/* 이미지 영역에만 오버레이 적용 */}
 
         {/* 기존 콘텐츠는 z-10으로 설정하여 배경 위로 오게 합니다. */}
         <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold leading-tight text-pink-500 px-4 relative z-10">
