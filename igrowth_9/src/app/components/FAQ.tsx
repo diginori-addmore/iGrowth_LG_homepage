@@ -53,7 +53,7 @@ export default function FAQ() {
                                 onClick={() => toggleItem(index)}
                                 className="w-full p-6 text-left flex justify-between items-center focus:outline-none"
                             >
-                                <h4 className="font-semibold text-lg text-white pr-4">{faq.question}</h4>
+                                <h4 className="font-semibold text-sm md:text-lg text-white pr-4">{faq.question}</h4>
                                 <ChevronDown
                                     className={`w-5 h-5 text-pink-400 transition-transform duration-300 ${openItems[index] ? 'rotate-180' : 'rotate-0'
                                         }`}
@@ -66,7 +66,7 @@ export default function FAQ() {
                                     }`}
                             >
                                 <div className="px-6 pb-6">
-                                    <p className="text-lg text-gray-300">{faq.answer}</p>
+                                    <p className="text-sm md:text-lg text-gray-300">{faq.answer}</p>
                                 </div>
                             </div>
                         </div>
