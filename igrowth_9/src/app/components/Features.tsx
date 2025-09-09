@@ -57,7 +57,7 @@ export default function Features() {
                 왜 LG U+ Why Not SW Camp 인가요?
             </h2>
             <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
-                누구든 실무 수행 경력의<br className="md:hidden" />개발자로 만들어 드립니다
+                누구든 실무 수행 경력의 <br className="md:hidden" />개발자로 만들어 드립니다
             </h2>
 
             {/* 모바일: 1열 -> sm: 2열 -> md: 4열 */}
