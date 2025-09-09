@@ -26,7 +26,7 @@ export default function Hero() {
 
         {/* 어두운 오버레이도 이미지와 동일하게 높이를 조절합니다. */}
         <div
-          className="absolute top-0 left-0 w-full z-0 bg-black opacity-40
+          className="absolute top-0 left-0 w-full z-0 bg-black opacity-10
              h-[28%] sm:h-[30%] md:h-[60%]"
         ></div>
 
