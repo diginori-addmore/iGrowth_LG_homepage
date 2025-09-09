@@ -14,13 +14,20 @@ export default function Hero() {
       >
         {/* 배경 이미지와 그라데이션 오버레이 */}
         <div
-          className="absolute top-0 left-0 w-full h-[45%] bg-cover bg-top bg-no-repeat z-0" // 상단 40% 영역에만 적용
+          className="absolute top-0 left-0 w-full z-0
+             h-[28%] sm:h-[30%] md:h-[60%]
+             bg-cover bg-top bg-no-repeat"
           style={{
-            backgroundImage: "url('/lgup_exhi.jpg')", // 여기에 사용할 이미지 경로를 넣어주세요.
-            // 이미지가 상단에만 나타나고 하단은 페이드아웃 되도록 마스크 적용
+            backgroundImage: "url('/lgup_exhi.jpg')",
             maskImage: "linear-gradient(to bottom, black 0%, transparent 100%)",
             WebkitMaskImage: "linear-gradient(to bottom, black 0%, transparent 100%)"
           }}
+        ></div>
+
+        {/* 어두운 오버레이도 이미지와 동일하게 높이를 조절합니다. */}
+        <div
+          className="absolute top-0 left-0 w-full z-0 bg-black opacity-10
+             h-[28%] sm:h-[30%] md:h-[60%]"
         ></div>
 
 
@@ -34,7 +41,7 @@ export default function Hero() {
         </h1>
 
         {/* 모바일에서 본문 폰트 크기와 상단 여백을 조정합니다. */}
-        <p className="mt-4 md:mt-6 text-base sm:text-lg text-white max-w-2xl px-4 relative z-10">
+        <p className="mt-4 md:mt-6 text-base text-sm sm:text-lg text-white max-w-2xl px-4 relative z-10">
           <br />
           프로젝트 수주 & 실무 & 경력 빌드업 과정!<br />
           네이버 출신 강사 + 카카오 출신 멘토와 함께<br />

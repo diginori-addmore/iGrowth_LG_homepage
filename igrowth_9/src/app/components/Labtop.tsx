@@ -20,7 +20,7 @@ export default function Labtop() {
 
             {/* 오른쪽 텍스트 */}
             <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left">
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
                     교육용 <span className="text-pink-500">고성능 노트북 무료 </span>지원
                 </h2>
                 <p className="text-base md:text-lg text-gray-600">
