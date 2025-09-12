@@ -6,7 +6,7 @@ import React from 'react';
 const teacherData = {
     name: "민경국 강사님",
     title: "22년 경력 실무에서 검증된 개발자",
-    bio: "네이버 출신 개발자로",
+    bio: "네이버 출신",
     career: [
         "현 디지노리 대표(수강자 실무 프로젝트 경력 증명서 발급)",
         "국내 최대 데이터파이프라인 구축(네이버 쇼핑)",

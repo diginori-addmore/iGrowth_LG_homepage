@@ -263,42 +263,40 @@ export default function FullCurriculum() {
                 <div className="border-b border-gray-600 mb-8"></div>
 
                 {/* 버튼 목록 */}
-                <div className="flex justify-center w-full">
-                    <div className="flex flex-wrap justify-start gap-4 max-w-5xl">
-                        {buttonsByCategory[activeCategory].map((btn, idx) => (
-                            // 모바일: w-full / 데스크톱: w-[300px]
-                            <div
-                                key={idx}
-                                className={`w-full md:w-[300px] p-4 rounded-lg bg-white/10 cursor-pointer transition-all duration-300 min-h-[60px] ${openButtons[activeCategory][idx] ? "shadow-xl" : "hover:shadow-md"
-                                    }`}
-                                onClick={() => toggleButton(activeCategory, idx)}
-                            >
-                                <div className="flex justify-between items-center">
-                                    <p className="font-semibold">{btn.title}</p>
-                                    <ChevronDown
-                                        className={`w-5 h-5 transition-transform duration-300 ${openButtons[activeCategory][idx] ? "rotate-180" : "rotate-0"
-                                            }`}
-                                    />
-                                </div>
-                                <div
-                                    className={`overflow-hidden transition-all duration-500 ease-in-out ${openButtons[activeCategory][idx]
-                                        ? "max-h-60 mt-2 opacity-100"
-                                        : "max-h-0 mt-0 opacity-0"
+                <div className="flex flex-wrap justify-start gap-4 items-start max-w-5xl mx-auto">
+                    {buttonsByCategory[activeCategory].map((btn, idx) => (
+                        // 모바일: w-full / 데스크톱: w-[300px]
+                        <div
+                            key={idx}
+                            className={`w-full md:w-[300px] p-4 rounded-lg bg-white/10 cursor-pointer transition-all duration-300 min-h-[60px] ${openButtons[activeCategory][idx] ? "shadow-xl" : "hover:shadow-md"
+                                }`}
+                            onClick={() => toggleButton(activeCategory, idx)}
+                        >
+                            <div className="flex justify-between items-center">
+                                <p className="font-semibold">{btn.title}</p>
+                                <ChevronDown
+                                    className={`w-5 h-5 transition-transform duration-300 ${openButtons[activeCategory][idx] ? "rotate-180" : "rotate-0"
                                         }`}
-                                >
-                                    {Array.isArray(btn.detail) ? (
-                                        <ul className="list-disc list-outside pl-5 space-y-1 text-sm text-gray-300">
-                                            {btn.detail.map((item, index) => (
-                                                <li key={index}>{item}</li>
-                                            ))}
-                                        </ul>
-                                    ) : (
-                                        <p className="text-sm text-gray-300">{btn.detail}</p>
-                                    )}
-                                </div>
+                                />
                             </div>
-                        ))}
-                    </div>
+                            <div
+                                className={`overflow-hidden transition-all duration-500 ease-in-out ${openButtons[activeCategory][idx]
+                                    ? "max-h-60 mt-2 opacity-100"
+                                    : "max-h-0 mt-0 opacity-0"
+                                    }`}
+                            >
+                                {Array.isArray(btn.detail) ? (
+                                    <ul className="list-disc list-outside pl-5 space-y-1 text-sm text-gray-300">
+                                        {btn.detail.map((item, index) => (
+                                            <li key={index}>{item}</li>
+                                        ))}
+                                    </ul>
+                                ) : (
+                                    <p className="text-sm text-gray-300">{btn.detail}</p>
+                                )}
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </section>
         </>
