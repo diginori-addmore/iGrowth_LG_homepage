@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
+import Apply from "./Apply";
 
 // 강의실 이미지 데이터
 const classroomData = [
@@ -141,6 +142,7 @@ export default function Classroom() {
                     animation: fadeIn 0.8s ease-in-out;
                 }
             `}</style>
+            <Apply />
         </section>
     );
 }
