@@ -1,11 +1,17 @@
 "use client";
 
 import React from 'react';
-
+// 마지막 2개의 단어를 붙여서 줄바꿈되지 않게 만드는 함수.
+const keepLastWordsTogether = (text: string, count = 2) => {
+  const parts = text.split(' ');
+  if (parts.length <= count) return text;
+  const tail = parts.splice(-count).join('\u00A0'); // non-breaking space
+  return [...parts, tail].join(' ');
+};
 // 실제 애플리케이션에서는 이 데이터를 API로부터 받아올 수 있습니다.
 const teacherData = {
     name: "민경국 강사님",
-    title: "22년 경력 실무에서 검증된 개발자",
+    title: "25년 경력 실무에서 검증된 개발자",
     bio: "네이버 출신",
     career: [
         "현 디지노리 대표(수강자 실무 프로젝트 경력 증명서 발급)",
@@ -46,17 +52,31 @@ export default function Teacher() {
                         <h3 className="text-2xl md:text-3xl font-bold text-black">{teacherData.name}</h3>
                         <p className="text-lg md:text-xl font-medium text-gray-700 mt-1 mb-6 whitespace-pre-line">{teacherData.title}</p>
 
-                        <p className="text-gray-600 leading-relaxed mb-8">
+                        <p className="text-xl font-semibold text-gray-900 mb-4 border-b-2 border-gray-200 pb-2">
                             {teacherData.bio}
                         </p>
 
                         {/* '주요 경력' 목록 */}
-                        <ul className="text-sm md:text-lg space-y-3 text-gray-600 mb-6">
+                        <ul className="text-sm md:text-base space-y-3 text-gray-600 mb-6">
                             {teacherData.career.map((item, index) => (
-                                // li를 flex 대신 grid로 변경하여 정렬 문제를 해결합니다.
-                                <li key={index} className="grid grid-cols-[auto_1fr] gap-x-3">
-                                    <svg className="w-5 h-5 text-pink-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                    <span>{item}</span>
+                                <li key={index} className="flex items-start md:items-center gap-x-2">
+                                <svg
+                                    className="w-5 h-5 text-pink-500 mt-1 md:mt-0 shrink-0"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                                    ></path>
+                                </svg>
+                                <span className="flex-1 break-keep text-pretty">
+                                    {keepLastWordsTogether(item)}
+                                </span>
                                 </li>
                             ))}
                         </ul>
@@ -64,19 +84,38 @@ export default function Teacher() {
                         <div>
                             <h4 className="text-xl font-semibold text-gray-900 mb-4 border-b-2 border-gray-200 pb-2">실무를 그대로 경험하는 교육</h4>
 
-                            <p className="text-gray-600 leading-relaxed mb-8">
+                            <div className="text-gray-600 mb-8 space-y-2">
                                 {teacherData.aim_title.map((line, idx) => (
-                                    <span key={idx} className="block">{line}</span>
+                                    <p
+                                    key={idx}
+                                    className="text-base leading-normal md:text-lg md:leading-relaxed break-keep text-pretty"
+                                    >
+                                    {keepLastWordsTogether(line)}
+                                    </p>
                                 ))}
-                            </p>
+                            </div>
 
                             {/* '교육 목표' 목록 */}
-                            <ul className="text-sm md:text-lg space-y-3 text-gray-600">
+                            <ul className="text-sm md:text-base space-y-3 text-gray-600">
                                 {teacherData.aim.map((item, index) => (
-                                    // 여기도 동일하게 grid를 적용하여 가독성을 높입니다.
-                                    <li key={index} className="grid grid-cols-[auto_1fr] gap-x-3">
-                                        <svg className="w-5 h-5 text-pink-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                        <span>{item}</span>
+                                    <li key={index} className="flex items-start md:items-center gap-x-2">
+                                    <svg
+                                        className="w-5 h-5 text-pink-500 mt-1 md:mt-0 shrink-0"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth="2"
+                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                                        ></path>
+                                    </svg>
+                                    <span className="flex-1 break-keep text-pretty">
+                                        {keepLastWordsTogether(item)}
+                                    </span>
                                     </li>
                                 ))}
                             </ul>
