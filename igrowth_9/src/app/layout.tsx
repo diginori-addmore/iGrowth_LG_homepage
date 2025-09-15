@@ -1,4 +1,5 @@
 import './globals.css';
+import MetaPixel from "./components/MetaPixel";
 import type { Metadata } from 'next';
 import { ReactNode } from 'react';
 import { GoogleTagManager } from '@next/third-parties/google';
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <AmplitudeInit />
           <Providers>{children}</Providers>
         </Suspense>
+        <MetaPixel />
       </body>
     </html>
   )

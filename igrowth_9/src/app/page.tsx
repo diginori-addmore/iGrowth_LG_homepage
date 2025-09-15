@@ -14,6 +14,7 @@ import Location from "./components/Location";
 import ScrollToTop from "./components/ScrollToTop";
 import Achieve from "./components/Achieve";
 
+
 export default function Page() {
     return (
         <>
