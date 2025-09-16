@@ -54,7 +54,7 @@ export default function Features() {
     return (
         <section id="features" className="py-16 px-4 md:py-20 md:px-6 bg-gradient-to-b from-pink-100 to-white">
             <h2 className="text-sm md:text-2xl font-bold text-center mt-10 mb-3 text-pink-500">
-                왜 LG U+ Why Not SW Camp 인가요?
+                왜 LG U⁺ Why Not SW Camp 인가요?
             </h2>
             <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
                 누구든 실무 수행 경력의 <br className="md:hidden" />개발자로 만들어 드립니다
