@@ -3,7 +3,7 @@ import React from 'react';
 export default function PromoPage() {
     return (
         // 전체 화면을 차지하는 메인 컨테이너
-        <div className="relative flex items-center justify-center h-[25vh] md:h-[50vh] w-full overflow-hidden bg-gradient-to-br from-black via-gray-800 to-pink-700">
+        <div className="relative flex items-center justify-center h-[20vh] md:h-[50vh] w-full overflow-hidden bg-gradient-to-br from-black via-gray-800 to-pink-700">
 
             {/* 색종이 효과 컨테이너 */}
             <div className="confetti-container">

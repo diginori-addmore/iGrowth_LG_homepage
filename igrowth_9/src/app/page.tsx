@@ -20,7 +20,9 @@ export default function Page() {
         <>
             <Navbar />
             <Hero />
-            <Achieve />
+            <div className="hidden md:block">
+                <Achieve />
+            </div>
             <Features />
             <Labtop />
             <Curriculum />

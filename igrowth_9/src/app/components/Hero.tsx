@@ -1,6 +1,7 @@
 "use client";
 
 import Apply from "./Apply";
+import Achieve from "./Achieve";
 
 export default function Hero() {
   // 혜택 아이콘 데이터
@@ -71,6 +72,22 @@ export default function Hero() {
           </span>
         </h1>
 
+        {/* --- 하단 설명 및 지원하기 버튼 --- */}
+        <div className="mt-16 block md:hidden">
+          <p className="text-base sm:text-2xl text-white max-w-3xl mx-auto leading-relaxed">
+            프로젝트 수주 / 실무 / 경력 빌드업 과정!
+            <br />
+            <span className="text-green-400">네이버</span> 출신 강사 + <span className="text-yellow-400">카카오</span> 출신 멘토와 함께
+            <br />
+            국내 유일! 강의와 실무 경험 동시 제공!
+          </p>
+          <Apply />
+        </div>
+
+        <div className="pt-10 block md:hidden -mx-4">
+          <Achieve />
+        </div>
+
         {/* --- 데스크톱: 5단 그리드 기반으로 카드 너비 조정 / 모바일: 1단 --- */}
         <div className="mt-12 grid grid-cols-1 lg:grid-cols-5 gap-8">
 
@@ -124,7 +141,7 @@ export default function Hero() {
         </div>
 
         {/* --- 하단 설명 및 지원하기 버튼 --- */}
-        <div className="mt-16">
+        <div className="mt-16 hidden md:block">
           <p className="text-base sm:text-2xl text-white max-w-3xl mx-auto leading-relaxed">
             프로젝트 수주 / 실무 / 경력 빌드업 과정!
             <br />
