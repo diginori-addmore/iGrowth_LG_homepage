@@ -3,10 +3,10 @@
 import React from 'react';
 // 마지막 2개의 단어를 붙여서 줄바꿈되지 않게 만드는 함수.
 const keepLastWordsTogether = (text: string, count = 2) => {
-  const parts = text.split(' ');
-  if (parts.length <= count) return text;
-  const tail = parts.splice(-count).join('\u00A0'); // non-breaking space
-  return [...parts, tail].join(' ');
+    const parts = text.split(' ');
+    if (parts.length <= count) return text;
+    const tail = parts.splice(-count).join('\u00A0'); // non-breaking space
+    return [...parts, tail].join(' ');
 };
 // 실제 애플리케이션에서는 이 데이터를 API로부터 받아올 수 있습니다.
 const teacherData = {
@@ -33,7 +33,7 @@ export default function Teacher() {
             <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12 md:mb-16">
                     <p className="text-lg md:text-xl font-bold pb-5 text-pink-400 mt-4">최고의 전문가가 여러분의 성장을 이끌어갑니다.</p>
-                    <h2 className="text-3xl md:text-5xl font-bold text-gray-800">LG U+ WHY NOT SW CAMP의 강사진 소개</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold text-gray-800">LG U⁺ WHY NOT SW CAMP의 강사진 소개</h2>
                 </div>
 
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
@@ -60,23 +60,23 @@ export default function Teacher() {
                         <ul className="text-sm md:text-base space-y-3 text-gray-600 mb-6">
                             {teacherData.career.map((item, index) => (
                                 <li key={index} className="flex items-start md:items-center gap-x-2">
-                                <svg
-                                    className="w-5 h-5 text-pink-500 mt-1 md:mt-0 shrink-0"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                                    ></path>
-                                </svg>
-                                <span className="flex-1 break-keep text-pretty">
-                                    {keepLastWordsTogether(item)}
-                                </span>
+                                    <svg
+                                        className="w-5 h-5 text-pink-500 mt-1 md:mt-0 shrink-0"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                                        ></path>
+                                    </svg>
+                                    <span className="flex-1 break-keep text-pretty">
+                                        {keepLastWordsTogether(item)}
+                                    </span>
                                 </li>
                             ))}
                         </ul>
@@ -87,10 +87,10 @@ export default function Teacher() {
                             <div className="text-gray-600 mb-8 space-y-2">
                                 {teacherData.aim_title.map((line, idx) => (
                                     <p
-                                    key={idx}
-                                    className="text-base leading-normal md:text-lg md:leading-relaxed break-keep text-pretty"
+                                        key={idx}
+                                        className="text-base leading-normal md:text-lg md:leading-relaxed break-keep text-pretty"
                                     >
-                                    {keepLastWordsTogether(line)}
+                                        {keepLastWordsTogether(line)}
                                     </p>
                                 ))}
                             </div>
@@ -99,23 +99,23 @@ export default function Teacher() {
                             <ul className="text-sm md:text-base space-y-3 text-gray-600">
                                 {teacherData.aim.map((item, index) => (
                                     <li key={index} className="flex items-start md:items-center gap-x-2">
-                                    <svg
-                                        className="w-5 h-5 text-pink-500 mt-1 md:mt-0 shrink-0"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                                        ></path>
-                                    </svg>
-                                    <span className="flex-1 break-keep text-pretty">
-                                        {keepLastWordsTogether(item)}
-                                    </span>
+                                        <svg
+                                            className="w-5 h-5 text-pink-500 mt-1 md:mt-0 shrink-0"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                                            ></path>
+                                        </svg>
+                                        <span className="flex-1 break-keep text-pretty">
+                                            {keepLastWordsTogether(item)}
+                                        </span>
                                     </li>
                                 ))}
                             </ul>
