@@ -1,13 +1,15 @@
 import React from 'react';
-import * as amplitude from "@amplitude/analytics-browser";
+import { useActivityTracker } from './events';
 
 export default function Apply() {
+    const { trackButtonClick } = useActivityTracker();
+
     const handleApplyClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-        e.preventDefault(); // 페이지 이동 잠시 중지
+        e.preventDefault();
         const href = e.currentTarget.href;
 
-        // Amplitude 이벤트 전송
-        amplitude.track("Button Clicked", {
+        // 버튼 클릭 이벤트 전송
+        trackButtonClick({
             button_name: "지원하기",
             redirect_url: href,
             page_url: window.location.href,
@@ -15,15 +17,14 @@ export default function Apply() {
             section: "hero",
         });
 
-        // 0.2초 후 실제 페이지 이동
+        // 이벤트 전송 후 페이지 이동
         setTimeout(() => {
             window.location.href = href;
         }, 200);
-
-
     };
+
     const handleKakaoClick = () => {
-        amplitude.track("Button Clicked", {
+        trackButtonClick({
             button_name: "카카오톡 상담",
             redirect_url: "https://pf.kakao.com/_lTcxcG/chat",
             page_url: window.location.href,
