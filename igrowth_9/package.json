@@ -1,6 +1,6 @@
 {
   "name": "igrowth_9",
-  "version": "25.0908.1",
+  "version": "25.0917.1",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
