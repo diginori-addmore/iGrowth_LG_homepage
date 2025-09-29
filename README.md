@@ -2,23 +2,22 @@
 
 ![Why Not SW Camp](https://whynotcamp.igrowth.kr/open_graph.png)
 
-## 📖 프로젝트 소개
+## 프로젝트 소개
 
 국내 유일 AI 경력 증명서 발급 부트캠프인 **"Why Not SW Camp"**의 공식 랜딩 페이지입니다.
 교육과 동시에 실무 이력을 만들어 200% 취업률을 목표로 하는 LG U+ 연계 부트캠프를 소개합니다.
+ **배포 URL**: https://whynotcamp.igrowth.kr/
 
-🌐 **배포 URL**: https://whynotcamp.igrowth.kr/
+## 주요 기능
 
-## 🚀 주요 기능
+-  **고급 사용자 분석**: Amplitude를 통한 실시간 사용자 행동 추적 및 세션 리플레이
+-  **반응형 디자인**: 모바일/태블릿/데스크톱 완벽 대응
+-  **마케팅 통합**: Google Tag Manager, Meta Pixel 연동으로 종합적인 추적
+-  **성능 최적화**: Next.js 15 + Turbopack으로 빠른 개발 및 빌드
+-  **한국어 최적화**: Pretendard 폰트로 깔끔한 한글 타이포그래피
+-  **실시간 이벤트 추적**: 사용자 활동 시간, 클릭, 스크롤 등 상세 분석
 
-- 📊 **고급 사용자 분석**: Amplitude를 통한 실시간 사용자 행동 추적 및 세션 리플레이
-- 📱 **반응형 디자인**: 모바일/태블릿/데스크톱 완벽 대응
-- 🎯 **마케팅 통합**: Google Tag Manager, Meta Pixel 연동으로 종합적인 추적
-- ⚡ **성능 최적화**: Next.js 15 + Turbopack으로 빠른 개발 및 빌드
-- 🎨 **한국어 최적화**: Pretendard 폰트로 깔끔한 한글 타이포그래피
-- 🔄 **실시간 이벤트 추적**: 사용자 활동 시간, 클릭, 스크롤 등 상세 분석
-
-## 🛠 기술 스택
+##  기술 스택
 
 ### Frontend
 - **Framework**: Next.js 15.5.2 (App Router)
@@ -38,7 +37,7 @@
 - **Package Manager**: pnpm (권장)
 - **Font**: Pretendard 5.2.5 (한국어 최적화)
 
-## 📦 설치 및 실행
+##  설치 및 실행
 
 ### 환경 요구사항
 - Node.js 18.0.0 이상
@@ -74,7 +73,7 @@ pnpm lint
 
 개발 서버는 http://localhost:3000 에서 확인할 수 있습니다.
 
-## 📁 프로젝트 구조
+##  프로젝트 구조
 
 ```
 iGrowth_LG_homepage/
@@ -107,9 +106,9 @@ iGrowth_LG_homepage/
 └── README.md                   # 이 파일
 ```
 
-## 📊 주요 컴포넌트 및 기능
+##  주요 컴포넌트 및 기능
 
-### 🎯 사용자 분석 시스템
+###  사용자 분석 시스템
 - **`events.tsx`**: 실시간 사용자 활동 추적
   - 마우스 움직임, 키보드 입력, 스크롤 감지
   - 실제 활성 시간 계산 (탭 전환, 비활성 시간 제외)
@@ -119,7 +118,7 @@ iGrowth_LG_homepage/
   - 사용자 속성 관리
   - 세션 리플레이 기능
 
-### 🎨 메인 페이지 섹션
+###  메인 페이지 섹션
 - **`Hero`**: 메인 비주얼, 모집 일정, 지원 버튼
 - **`Features`**: 6가지 핵심 혜택 (훈련장려금, 멘토링, 노트북 대여 등)
 - **`Curriculum`**: 상세 교육 과정 및 일정
@@ -127,12 +126,12 @@ iGrowth_LG_homepage/
 - **`Result`**: 수료생 성과 및 취업 현황
 - **`Apply`**: 지원하기 및 카카오톡 상담 CTA
 
-### 🔄 마케팅 도구 통합
+###  마케팅 도구 통합
 - **Google Tag Manager**: 포괄적인 이벤트 추적
 - **Meta Pixel**: 페이스북 광고 최적화
 - **버튼 클릭 추적**: 지원하기, 상담하기 등 주요 액션 모니터링
 
-## 🚀 배포
+##  배포
 
 ### Vercel (권장)
 ```bash
@@ -148,15 +147,15 @@ vercel
 - **AWS**: S3 + CloudFront 또는 EC2
 - **기타**: Docker 컨테이너화 가능
 
-## 📈 성능 최적화
+##  성능 최적화
 
-- ⚡ **Turbopack**: 기존 Webpack 대비 10배 빠른 개발 환경
-- 🖼️ **이미지 최적화**: Next.js Image 컴포넌트 활용
-- 📱 **반응형 이미지**: 디바이스별 최적화된 해상도 제공
-- 🎯 **지연 로딩**: 뷰포트 진입 시점에 컨텐츠 로드
-- 📊 **분석 최적화**: 이벤트 스로틀링으로 성능 영향 최소화
+-  **Turbopack**: 기존 Webpack 대비 10배 빠른 개발 환경
+-  **이미지 최적화**: Next.js Image 컴포넌트 활용
+-  **반응형 이미지**: 디바이스별 최적화된 해상도 제공
+-  **지연 로딩**: 뷰포트 진입 시점에 컨텐츠 로드
+-  **분석 최적화**: 이벤트 스로틀링으로 성능 영향 최소화
 
-## 🧪 개발 가이드
+##  개발 가이드
 
 ### 코드 스타일
 - **ESLint**: Next.js 권장 설정 사용
@@ -193,7 +192,7 @@ export default function NewComponent() {
 }
 ```
 
-## 🐛 문제 해결
+##  문제 해결
 
 ### 일반적인 문제
 1. **빌드 오류**: `pnpm clean && pnpm install` 후 재시도
@@ -205,13 +204,13 @@ export default function NewComponent() {
 - 개발 모드에서 느린 경우: Turbopack 사용 확인 (`--turbopack` 플래그)
 - 빌드 시간 단축: `.next` 폴더 삭제 후 재빌드
 
-## 📞 연락처 및 지원
+##  연락처 및 지원
 
 - **프로젝트 관련 문의**: [기술팀 연락처]
 - **부트캠프 상담**: [카카오톡 상담](https://pf.kakao.com/_lTcxcG/chat)
 - **지원하기**: [지원 페이지](https://igrowth.recruit.roundhr.com/c/RWTJ5MAHQN/apply)
 
-## 📄 라이선스
+##  라이선스
 
 이 프로젝트는 [라이선스명]에 따라 라이선스가 부여됩니다.
 
