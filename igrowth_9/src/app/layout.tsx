@@ -7,6 +7,7 @@ import { GoogleTagManager } from '@next/third-parties/google';
 import Providers from './providers';
 import { Suspense } from 'react' // ⬅️ 추가
 import AmplitudeInit from "./AmplitudeInit";
+import EventTracker from "./components/events";
 
 export const metadata: Metadata = {
   title: 'LG U+ 연계 | Why Not SW Camp',
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {/* ⬇️ CSR 훅(useSearchParams/usePathname)을 쓰는 트리 전체를 Suspense로 감쌉니다 */}
         <Suspense fallback={null}>
           <AmplitudeInit />
+          <EventTracker />
           <Providers>{children}</Providers>
         </Suspense>
         <MetaPixel />
