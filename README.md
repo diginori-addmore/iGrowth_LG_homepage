@@ -4,9 +4,11 @@
 
 ## 프로젝트 소개
 
-국내 유일 AI 경력 증명서 발급 부트캠프인 **"Why Not SW Camp"**의 공식 랜딩 페이지입니다.
+국내 유일 AI 경력 증명서 발급 부트캠프인 **Why Not SW Camp**의 공식 랜딩 페이지입니다.
+
 교육과 동시에 실무 이력을 만들어 200% 취업률을 목표로 하는 LG U+ 연계 부트캠프를 소개합니다.
- **배포 URL**: https://whynotcamp.igrowth.kr/
+
+**배포 URL**: https://whynotcamp.igrowth.kr/
 
 ## 주요 기능
 
@@ -26,7 +28,7 @@
 - **Styling**: Tailwind CSS 3.4.17
 
 ### Analytics & Marketing
-- **사용자 분석**: Amplitude Analytics Browser 2.23.6
+- **사용자 분석**: Amplitude Analytics Browser 2.23.6, Google Analytics
 - **세션 리플레이**: Amplitude Session Replay Plugin 1.22.11
 - **광고 추적**: Google Tag Manager, Meta Pixel
 - **아이콘**: Lucide React 0.542.0
