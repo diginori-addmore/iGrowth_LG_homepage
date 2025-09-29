@@ -138,7 +138,7 @@ iGrowth_LG_homepage/
 ### Vercel (권장)
 ```
 # https://vercel.com/ 에 깃헙 계정 연결 후 연동하면 import 가능
-main에 push 하고 도메인 연결하면 사용 가능
+# main에 push 하고 도메인 연결하면 사용 가능능
 ```
 ##  개발 가이드
 
@@ -180,7 +180,7 @@ export default function NewComponent() {
 ##  문제 해결
 
 ### 일반적인 문제
-1. **빌드 오류**: `pnpm clean && pnpm install` 후 재시도
+1. **빌드 오류**: `pnpm install` 및 타입 에러 수정 후 재시도
 2. **타입 오류**: `npx tsc --noEmit`로 타입 체크
 3. **스타일 미적용**: Tailwind 설정 및 CSS 임포트 확인
 4. **Amplitude 연동**: analytics.ts 파일의 API 키 설정 확인
