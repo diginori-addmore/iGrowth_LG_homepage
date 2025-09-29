@@ -136,27 +136,10 @@ iGrowth_LG_homepage/
 ##  배포
 
 ### Vercel (권장)
-```bash
-# Vercel CLI 설치
-npm i -g vercel
-
-# 배포
-vercel
 ```
-
-### 기타 플랫폼
-- **Netlify**: `pnpm build` 후 `out` 폴더 배포
-- **AWS**: S3 + CloudFront 또는 EC2
-- **기타**: Docker 컨테이너화 가능
-
-##  성능 최적화
-
--  **Turbopack**: 기존 Webpack 대비 10배 빠른 개발 환경
--  **이미지 최적화**: Next.js Image 컴포넌트 활용
--  **반응형 이미지**: 디바이스별 최적화된 해상도 제공
--  **지연 로딩**: 뷰포트 진입 시점에 컨텐츠 로드
--  **분석 최적화**: 이벤트 스로틀링으로 성능 영향 최소화
-
+# https://vercel.com/ 에 깃헙 계정 연결 후 연동하면 import 가능
+main에 push 하고 도메인 연결하면 사용 가능
+```
 ##  개발 가이드
 
 ### 코드 스타일
