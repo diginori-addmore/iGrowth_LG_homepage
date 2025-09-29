@@ -70,42 +70,7 @@ pnpm build
 pnpm start
 
 # 코드 품질 검사
-pnpm lint
-```
-
-개발 서버는 http://localhost:3000 에서 확인할 수 있습니다.
-
-##  프로젝트 구조
-
-```
-iGrowth_LG_homepage/
-├── igrowth_9/                    # 메인 Next.js 애플리케이션
-│   ├── src/
-│   │   ├── app/
-│   │   │   ├── components/       # UI 컴포넌트
-│   │   │   │   ├── Hero.tsx     # 메인 히어로 섹션 (지원 정보)
-│   │   │   │   ├── Features.tsx # 부트캠프 특징 소개
-│   │   │   │   ├── Curriculum.tsx # 커리큘럼 상세 정보
-│   │   │   │   ├── Teacher.tsx  # 강사진 소개
-│   │   │   │   ├── Result.tsx   # 교육 성과 및 후기
-│   │   │   │   ├── Apply.tsx    # 지원하기 CTA 버튼
-│   │   │   │   ├── FAQ.tsx      # 자주 묻는 질문
-│   │   │   │   ├── events.tsx   # 사용자 활동 추적 시스템
-│   │   │   │   └── ...
-│   │   │   ├── layout.tsx       # 루트 레이아웃 (SEO, 분석 도구)
-│   │   │   ├── page.tsx         # 메인 페이지 구성
-│   │   │   ├── providers.tsx    # Context Providers
-│   │   │   └── AmplitudeInit.tsx # Amplitude 초기화
-│   │   ├── lib/
-│   │   │   └── analytics.ts     # Amplitude 설정 및 헬퍼
-│   │   └── globals.css          # 전역 스타일
-│   ├── public/                  # 정적 파일
-│   │   ├── images/             # 이미지 에셋
-│   │   └── favicon.png         # 파비콘
-│   ├── package.json            # 프로젝트 설정
-│   ├── tailwind.config.js      # Tailwind 설정
-│   └── next.config.ts          # Next.js 설정
-└── README.md                   # 이 파일
+pnp미
 ```
 
 ##  주요 컴포넌트 및 기능
@@ -138,7 +103,7 @@ iGrowth_LG_homepage/
 ### Vercel (권장)
 ```
 # https://vercel.com/ 에 깃헙 계정 연결 후 연동하면 import 가능
-# main에 push 하고 도메인 연결하면 사용 가능능
+# main에 push 하고 도메인 연결하면 사용 가능
 ```
 ##  개발 가이드
 
