@@ -9,37 +9,37 @@ const classroomData = [
         id: 1,
         title: "세미나실",
         description: "설명문구기입",
-        imgSrc: "pic_04.png"
+        imgSrc: "pic_04.webp"
     },
     {
         id: 2,
         title: "스터디룸",
         description: "설명문구기입",
-        imgSrc: "pic_05.png"
+        imgSrc: "pic_05.webp"
     },
     {
         id: 3,
         title: "열람실",
         description: "설명문구기입",
-        imgSrc: "pic_06.png"
+        imgSrc: "pic_06.webp"
     },
     {
         id: 4,
         title: "강의실",
         description: "설명문구기입",
-        imgSrc: "pic_07.png"
+        imgSrc: "pic_07.webp"
     },
     {
         id: 5,
         title: "강의실",
         description: "설명문구기입",
-        imgSrc: "pic_08.png"
+        imgSrc: "pic_08.webp"
     },
     {
         id: 6,
         title: "1:1 멘토링 룸",
         description: "설명문구기입",
-        imgSrc: "pic_09.png"
+        imgSrc: "pic_09.webp"
     },
 ];
 

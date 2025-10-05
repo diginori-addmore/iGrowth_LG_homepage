@@ -41,7 +41,7 @@ export default function Teacher() {
                     {/* 모바일 화면에서 너비를 w-1/2로 수정하여 크기를 줄입니다. */}
                     <div className="w-1/2 sm:w-2/3 md:w-1/3 flex-shrink-0">
                         <img
-                            src="/teacher.png"
+                            src="/teacher.webp"
                             alt={`${teacherData.name} profile picture`}
                             className="w-full h-auto rounded-2xl object-cover"
                         />

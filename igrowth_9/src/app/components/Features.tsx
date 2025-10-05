@@ -5,7 +5,7 @@ import React from 'react';
 export default function Features() {
     const features = [
         {
-            img: "/images/features/feature1.png",
+            img: "/images/features/feature1.webp",
             title: "기초 실습 & 프로젝트",
             description: (
                 <>
@@ -15,7 +15,7 @@ export default function Features() {
             )
         },
         {
-            img: "/images/features/feature2.png",
+            img: "/images/features/feature2.webp",
             title: "AI & 데이터 분석",
             description: (
                 <>
@@ -26,7 +26,7 @@ export default function Features() {
             )
         },
         {
-            img: "/images/features/feature3.png",
+            img: "/images/features/feature3.webp",
             title: "현업 프로젝트 경험",
             description: (
                 <>
@@ -38,7 +38,7 @@ export default function Features() {
             )
         },
         {
-            img: "/images/features/feature4.png",
+            img: "/images/features/feature4.webp",
             title: "빠른 역량 향상",
             description: (
                 <>

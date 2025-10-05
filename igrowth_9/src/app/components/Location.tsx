@@ -10,7 +10,7 @@ export default function Location() {
                         <h3 className="text-2xl font-bold text-gray-800 mb-6 border-b-2 border-gray-200 pb-4">아이그로스 노량진 캠퍼스</h3>
                         <p className="mt-2 text-gray-700">서울특별시 동작구 노량진로 114, 6층 (청탑학원, 1층 CU 편의점)</p>
                         <div className="mt-4">
-                            <img src="/images/location.png" alt="교육장소 지도" className="rounded-md w-full h-auto object-cover" />
+                            <img src="/images/location.webp" alt="교육장소 지도" className="rounded-md w-full h-auto object-cover" />
                         </div>
                         <div className="mt-6 text-gray-600 space-y-2">
                             <p><strong>지하철:</strong> 1호선/9호선 노량진역 6번 출구에서 도보 1분</p>

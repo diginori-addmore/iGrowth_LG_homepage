@@ -39,27 +39,27 @@ const reviewData = [
 
 // 프로젝트 결과물 카드 데이터 (상단 8개)
 const projectDataTop = [
-    { img: "/proj_01.png", link: "https://github.com/whynotsw-camp/wh01-3rd-1team-CounselingHelp" },
-    { img: "/proj_02.png", link: "https://github.com/whynotsw-camp/wh01-3rd-2team-DOD" },
-    { img: "/proj_03.png", link: "https://github.com/whynotsw-camp/wh01-3rd-3team-UTIDAL" },
-    { img: "/proj_04.png", link: "https://github.com/whynotsw-camp/wh01-3rd-4team-DATARO" },
-    { img: "/proj_05.png", link: "https://github.com/whynotsw-camp/wh01-3rd-5team-GrandmaBae" },
-    { img: "/proj_06.png", link: "https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI" },
-    { img: "/proj_07.png", link: "https://github.com/whynotsw-camp/wh02-3rd-2team-YNW" },
-    { img: "/proj_08.png", link: "https://github.com/whynotsw-camp/wh02-3rd-3team-SHC" },
+    { img: "/proj_01.webp", link: "https://github.com/whynotsw-camp/wh01-3rd-1team-CounselingHelp" },
+    { img: "/proj_02.webp", link: "https://github.com/whynotsw-camp/wh01-3rd-2team-DOD" },
+    { img: "/proj_03.webp", link: "https://github.com/whynotsw-camp/wh01-3rd-3team-UTIDAL" },
+    { img: "/proj_04.webp", link: "https://github.com/whynotsw-camp/wh01-3rd-4team-DATARO" },
+    { img: "/proj_05.webp", link: "https://github.com/whynotsw-camp/wh01-3rd-5team-GrandmaBae" },
+    { img: "/proj_06.webp", link: "https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI" },
+    { img: "/proj_07.webp", link: "https://github.com/whynotsw-camp/wh02-3rd-2team-YNW" },
+    { img: "/proj_08.webp", link: "https://github.com/whynotsw-camp/wh02-3rd-3team-SHC" },
 ];
 
 // 프로젝트 결과물 카드 데이터 (하단 9개)
 const projectDataBottom = [
-    { img: "/proj_09.png", link: "https://github.com/whynotsw-camp/wh02-3rd-4team-YCJ" },
-    { img: "/proj_10.png", link: "https://github.com/whynotsw-camp/wh03-3rd-Ateam-BorderCollies" },
-    { img: "/proj_11.png", link: "https://github.com/whynotsw-camp/wh03-3rd-Bteam-Short-U" },
-    { img: "/proj_12.png", link: "https://github.com/whynotsw-camp/wh05-3rd-Pteam" },
-    { img: "/proj_13.png", link: "https://github.com/whynotsw-camp/wh05-3rd-JungSung" },
-    { img: "/proj_14.png", link: "https://github.com/whynotsw-camp/wh05-3rd-CHteam-JOB" },
-    { img: "/proj_15.png", link: "https://github.com/whynotsw-camp/wh06-3rd-Uhok" },
-    { img: "/proj_16.png", link: "https://github.com/whynotsw-camp/wh06-3rd-AI_Go" },
-    { img: "/proj_17.png", link: "https://github.com/whynotsw-camp/wh06-3rd-Niche-Analyst" },
+    { img: "/proj_09.webp", link: "https://github.com/whynotsw-camp/wh02-3rd-4team-YCJ" },
+    { img: "/proj_10.webp", link: "https://github.com/whynotsw-camp/wh03-3rd-Ateam-BorderCollies" },
+    { img: "/proj_11.webp", link: "https://github.com/whynotsw-camp/wh03-3rd-Bteam-Short-U" },
+    { img: "/proj_12.webp", link: "https://github.com/whynotsw-camp/wh05-3rd-Pteam" },
+    { img: "/proj_13.webp", link: "https://github.com/whynotsw-camp/wh05-3rd-JungSung" },
+    { img: "/proj_14.webp", link: "https://github.com/whynotsw-camp/wh05-3rd-CHteam-JOB" },
+    { img: "/proj_15.webp", link: "https://github.com/whynotsw-camp/wh06-3rd-Uhok" },
+    { img: "/proj_16.webp", link: "https://github.com/whynotsw-camp/wh06-3rd-AI_Go" },
+    { img: "/proj_17.webp", link: "https://github.com/whynotsw-camp/wh06-3rd-Niche-Analyst" },
 ];
 
 
