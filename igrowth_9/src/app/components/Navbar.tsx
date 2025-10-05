@@ -48,7 +48,7 @@ export default function Navbar() {
                 className="flex items-center gap-2 hover:opacity-80 transition-opacity duration-200 cursor-pointer"
                 aria-label="맨 위로 이동"
             >
-                <Image src="/LG.jpg" alt="LG U+" width={50} height={40} />
+                <Image src="/LG.webp" alt="LG U+" width={50} height={40} />
                 <span className="text-base font-bold text-black-500">Why Not SW Camp</span>
             </button>
             {/* ul 태그에 h-full을 추가하여 navbar 높이를 채우도록 함 */}

@@ -6,12 +6,12 @@ import Achieve from "./Achieve";
 export default function Hero() {
   // 혜택 아이콘 데이터
   const benefits = [
-    { src: "/images/icons/1.png", label: "훈련장려금 월 최대\n816,000원 지급" },
-    { src: "/images/icons/2.png", label: "LG,네이버,카카오 등\n 현직자 특강 및\n멘토링 & 입사 추천서" },
-    { src: "/images/icons/3.png", label: "고성능 노트북\n무료 대여" },
-    { src: "/images/icons/4.png", label: "1:1 이력서, \n포트폴리오 작성 및\n현직자 책임 추천 제도" },
-    { src: "/images/icons/5.png", label: "실무 프로젝트 수행 및\n수료 시 경력증명서 발급" },
-    { src: "/images/icons/6.png", label: "오프라인 학습 및\n회의공간 제공" },
+    { src: "/images/icons/1.webp", label: "훈련장려금 월 최대\n816,000원 지급" },
+    { src: "/images/icons/2.webp", label: "LG,네이버,카카오 등\n 현직자 특강 및\n멘토링 & 입사 추천서" },
+    { src: "/images/icons/3.webp", label: "고성능 노트북\n무료 대여" },
+    { src: "/images/icons/4.webp", label: "1:1 이력서, \n포트폴리오 작성 및\n현직자 책임 추천 제도" },
+    { src: "/images/icons/5.webp", label: "실무 프로젝트 수행 및\n수료 시 경력증명서 발급" },
+    { src: "/images/icons/6.webp", label: "오프라인 학습 및\n회의공간 제공" },
   ];
 
   // 상단 카드 데이터
@@ -35,7 +35,7 @@ export default function Hero() {
       <div
         className="absolute top-0 left-0 w-full z-0 h-[28%] sm:h-[30%] md:h-[80%] lg:hidden"
         style={{
-          backgroundImage: "url('/background.png')",
+          backgroundImage: "url('/background.webp')",
           backgroundSize: 'cover',
           backgroundPosition: 'top',
           backgroundRepeat: 'no-repeat',
@@ -49,7 +49,7 @@ export default function Hero() {
       <div
         className="absolute top-0 left-0 w-full z-0 h-[28%] sm:h-[30%] md:h-[80%] hidden lg:block"
         style={{
-          backgroundImage: "url('/background.png')",
+          backgroundImage: "url('/background.webp')",
           backgroundSize: '100% auto',
           backgroundPosition: 'top',
           backgroundRepeat: 'no-repeat',

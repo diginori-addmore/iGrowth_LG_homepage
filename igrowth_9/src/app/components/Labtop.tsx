@@ -11,7 +11,7 @@ export default function Labtop() {
             {/* 왼쪽 이미지 */}
             <div className="w-full md:w-1/2 flex justify-center md:justify-left">
                 <img
-                    src="/labtop.png"
+                    src="/labtop.webp"
                     alt="랩탑"
                     // 모바일과 데스크톱에서 이미지 높이 조정
                     className="h-40 md:h-60 object-contain"

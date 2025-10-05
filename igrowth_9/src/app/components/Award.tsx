@@ -11,7 +11,7 @@ export default function Award() {
             {/* 모바일: h-1/2 / 데스크톱: md:h-3/4 */}
             <div className="absolute bottom-0 left-0 right-0 h-2/3 md:h-3/4 z-0 opacity-70">
                 <img
-                    src="/award_effect.png"
+                    src="/award_effect.webp"
                     alt="Abstract background"
                     className="w-full h-full object-cover"
                 />
@@ -36,7 +36,7 @@ export default function Award() {
                     {/* 첫 번째 가로 이미지 */}
                     <div className="w-full md:w-4/5 transform transition-transform duration-300 hover:scale-105">
                         <img
-                            src="/award1.jpg"
+                            src="/award1.webp"
                             alt="Award 1"
                             className="w-full h-auto shadow-2xl border-2 border-yellow-800"
                         />
@@ -45,7 +45,7 @@ export default function Award() {
                     {/* 두 번째 가로 이미지 */}
                     <div className="w-full md:w-4/5 transform transition-transform duration-300 hover:scale-105">
                         <img
-                            src="/award2.jpg"
+                            src="/award2.webp"
                             alt="Award 2"
                             className="w-full h-auto shadow-2xl border-2 border-yellow-800"
                         />
@@ -57,7 +57,7 @@ export default function Award() {
                         {/* 모바일: w-1/3 / 데스크톱: md:w-1/3 */}
                         <div className="w-1/3 transform transition-transform duration-300 hover:scale-105">
                             <img
-                                src="/awarded_01.jpg"
+                                src="/awarded_01.webp"
                                 alt="Award 3"
                                 className="w-full h-auto shadow-2xl border-2 border-yellow-800 aspect-square object-cover"
                             />
@@ -65,7 +65,7 @@ export default function Award() {
                         {/* 모바일: w-1/3 / 데스크톱: md:w-1/3 */}
                         <div className="w-1/3 transform transition-transform duration-300 hover:scale-105">
                             <img
-                                src="/awarded_02.jpg"
+                                src="/awarded_02.webp"
                                 alt="Award 4"
                                 className="w-full h-auto shadow-2xl border-2 border-yellow-800 aspect-square object-cover"
                             />
@@ -73,7 +73,7 @@ export default function Award() {
                         {/* 모바일: w-1/3 / 데스크톱: md:w-1/3 */}
                         <div className="w-1/3 transform transition-transform duration-300 hover:scale-105">
                             <img
-                                src="/awarded_03.jpg"
+                                src="/awarded_03.webp"
                                 alt="Award 5"
                                 className="w-full h-auto shadow-2xl border-2 border-yellow-800 aspect-square object-cover"
                             />
