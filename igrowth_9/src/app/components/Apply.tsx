@@ -36,7 +36,7 @@ export default function Apply() {
     return (
         <div className="mt-8 md:mt-12 flex flex-row justify-center gap-4 relative z-10">
             <a
-                href="https://igrowth.recruit.roundhr.com/c/RWTJ5MAHQN/apply"
+                href="https://igrowth.recruit.roundhr.com/c/uVPZUvS7RX/apply"
                 onClick={handleApplyClick}
                 className="px-8 py-4 bg-pink-600 text-white rounded-lg shadow-lg hover:bg-pink-700 transition-all duration-300 font-bold text-lg transform hover:scale-105"
             >

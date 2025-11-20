@@ -75,7 +75,7 @@ export default function Navbar() {
                     );
                 })}
                 <li className="h-full flex items-center">
-                    <a href="https://igrowth.recruit.roundhr.com/c/RWTJ5MAHQN/apply"
+                    <a href="https://igrowth.recruit.roundhr.com/c/uVPZUvS7RX/apply"
                         onClick={handleApplyClick}
                         className="font-extrabold text-yellow-500 hover:text-yellow-600 transition-colors duration-200 pl-4">
                         지원하기
